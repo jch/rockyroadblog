@@ -1,0 +1,25 @@
+/* line 3, ../sass/debug.sass */
+body {
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, #cccccc), color-stop(5%, rgba(204, 204, 204, 0)));
+  background-image: -webkit-linear-gradient(bottom, #cccccc 5%, rgba(204, 204, 204, 0) 5%);
+  background-image: -moz-linear-gradient(bottom, #cccccc 5%, rgba(204, 204, 204, 0) 5%);
+  background-image: -o-linear-gradient(bottom, #cccccc 5%, rgba(204, 204, 204, 0) 5%);
+  background-image: -ms-linear-gradient(bottom, #cccccc 5%, rgba(204, 204, 204, 0) 5%);
+  background-image: linear-gradient(bottom, #cccccc 5%, rgba(204, 204, 204, 0) 5%);
+  -moz-background-size: 100% 1.625em;
+  -webkit-background-size: 100% 1.625em;
+  -o-background-size: 100% 1.625em;
+  background-size: 100% 1.625em;
+  background-position: left top;
+}
+
+/* line 6, ../sass/debug.sass */
+#content-wrapper {
+  background-color: transparent;
+}
+
+/* line 9, ../sass/debug.sass */
+#debug {
+  background-color: #ef2422;
+  color: black;
+}

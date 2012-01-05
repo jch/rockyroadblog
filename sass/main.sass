@@ -1,0 +1,244 @@
+@import "base"
+
+=leather
+  background-color: $dark-color
+  color: #fff
+  +background(linear-gradient(rgba(#aaa, 0.1), rgba(#222, 0.1)), url(../images/dark_leather.png))
+
+=follow-button($image)
+  +background(linear-gradient(rgba(#aaa, 0.1), rgba(#222, 0.1)), url($image) $font-unit no-repeat, url(../images/dark_leather.png))
+
+body
+  +establish-baseline
+  font-family: Helvetica, sans-serif
+  background: url(../images/light_alu.png)
+
+h1
+  +adjust-font-size-to(30px)
+h2
+  +adjust-font-size-to(26px)
+h3
+  +adjust-font-size-to(21px)
+h4, h5, h6
+  +adjust-font-size-to(18px)
+
+p
+  line-height: $base-line-height  // wasn't being set by +establish-baseline
+
+a
+  color: $link-color
+  +hover-link
+  &:visited
+    color: #000
+
+hr
+  border: none
+  margin: 0 auto
+  width: 100px
+  background: $stripes-url
+  background-size: cover
+  +rhythm(0, 1, 0, 0)
+
+img, embed, object, video
+  width: 100%
+  max-width: 100%
+
+.heading
+  font-family: Times, serif
+
+.button
+  display: block
+  text-align: center
+  width: rhythm(2) * 2.2
+  font-weight: bold
+  +adjust-leading-to(1)
+  +adjust-font-size-to(12px)
+  +unstyled-link
+  +border-radius(2px)
+  +single-box-shadow(rgba(#000, 0.2), 1px, 1px, 1px)
+
+#header-wrapper
+  display: hidden
+  position: absolute
+  height: rhythm(3)
+  width: 100%
+  z-index: -1
+  +leather
+  +single-box-shadow
+
+#wrapper
+  width: 95%
+  margin: 0 auto
+
+#header
+  position: relative
+  text-decoration: none
+  // font-family: 'Bangers', cursive
+  font-family: 'Yellowtail', cursive
+  a
+    color: #fff
+  #logo
+    display: block
+    +adjust-font-size-to(55px)
+    +background($stripes-url 0% 100% no-repeat)
+    +single-text-shadow(#000, 1px, 2px, 0)
+  #nav
+    position: absolute
+    top: 0
+    right: 0
+    height: rhythm(3)
+    li
+      float: left
+      a
+        display: block
+        padding: 0 rhythm(1)
+        +adjust-leading-to(3)
+
+#content-wrapper, #footer
+  padding: 0 rhythm(1)
+
+#content-wrapper
+  background-color: #fff
+  +rhythm(1, 1, 1, 0) // leader, padding-leader, padding-trailer, trailer
+  +single-box-shadow(rgba(#000, 0.3), 0px, 0px, 4px)
+  +clearfix
+
+  #main
+
+  #sidebar
+    .section
+      +trailer(1)
+      +clearfix
+    .follow
+      li
+        +adjust-leading-to(2)
+        +trailer(1)
+        a
+          display: block
+          padding-left: 60px
+          text-align: left
+          color: #fff
+          +border-radius(4px)
+          +single-box-shadow
+          &:hover
+            color: $ferrari-color
+        .facebook
+          +follow-button('../images/facebook.png')
+        .twitter
+          +follow-button('../images/twitter.png')
+        .rss
+          +follow-button('../images/rss.png')
+        .email
+          +follow-button('../images/email.png')
+    .other
+      li 
+        +trailer(1)
+        +adjust-font-size-to(12px)
+        a  // slightly off image, so couldn't do transparent overlay
+          position: relative
+          display: block
+          span
+            position: absolute
+            top: 0px
+            width: 100%
+            display: block
+            padding: 0 $font-unit
+            background-color: rgba(#000, 0.7)
+            color: #fff
+            &:hover
+              color: $ferrari-color
+
+#footer
+  clear: both
+  +leather
+  +rhythm(0, 1, 1, 0)
+  +border-radius(0px 0px 5px 5px)
+  +trailer(1)
+
+/* wraps around bodies of text meant for reading */
+.content
+  p
+    // +trailer(1)
+    margin-bottom: $base-font-size // breaks rhythm, but better looking
+
+.post
+  +rhythm(0, 1, 1, 0)
+  // padding done by container for :first and :last
+  &:first-child
+    +rhythm(0, 0, 1, 0)
+  &:last-child
+    +rhythm(0, 1, 0, 0)
+  .title
+  .lead
+    // images need to be in the correct aspect ratio to not break rhythm
+    // for now, using overflow hidden to keep rhythm
+    // overflow: hidden
+    // height: rhythm(17) // either works
+  .meta
+    font-family: Arial, sans-serif
+    color: $secondary-text-color
+    font-style: italic
+    +adjust-font-size-to(13px)
+    .author
+      +adjust-leading-to(2)
+    .social
+      margin-left: -5px // sigh
+      height: rhythm(1)
+      // +trailer(1)
+      margin-bottom: $base-font-size // breaks rhythm
+      a
+        margin: 0 !important
+        display: inline-block
+        width: 80px !important
+        padding-left: 5px
+        position: relative // for contained iframe or div
+        vertical-align: top
+        &.addthis_button_google_plusone
+          width: 60px !important
+        iframe, div
+          margin: 0 !important
+          position: absolute
+
+  .content
+    clear: both  // +clearfix not working
+  .read-more::after
+    content: " »"
+
+/* Pagination */
+#pagination
+  +leader(1)
+  text-align: center
+  a
+    display: inline-block
+    text-transform: uppercase
+    color: #fff
+    background-color: #d5151E // #D14836 // $ferrari-color
+    // +background(linear-gradient(#dd4b39,#d14836))
+    +trailer(1)
+    &:hover
+      +background(linear-gradient(#dd4b39,darken(#d14836, 7%)))
+
+/* Post Show */
+#disqus_thread  // vertical rhythm doable, but too much work
+  margin: 0 !important
+  +rhythm(0, 0, 1, 0)
+
+/* Desktop */
+@media screen and (min-width: 800px)
+  #content-wrapper
+    #main
+      float: left
+      width: 59%
+      border-right: 1px dashed #ccc
+      padding: 0
+      padding: 0 rhythm(1) // widens on top of mobile layout
+
+    #sidebar
+      float: left
+      width: 30%
+      padding: 0
+      padding-left: rhythm(1)
+      .follow
+        li
+          a
+            width: 55%

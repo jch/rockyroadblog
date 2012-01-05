@@ -1,0 +1,439 @@
+@charset "UTF-8";
+/* line 11, ../sass/main.sass */
+body {
+  font-family: Helvetica, sans-serif;
+  background: url(../images/light_alu.png);
+}
+/* line 51, /Users/jch/.rvm/gems/ruby-1.9.2-p180-patched/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+body body {
+  font-size: 100%;
+  line-height: 1.625em;
+}
+/* line 55, /Users/jch/.rvm/gems/ruby-1.9.2-p180-patched/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+body html > body {
+  font-size: 16px;
+}
+
+/* line 16, ../sass/main.sass */
+h1 {
+  font-size: 1.875em;
+  line-height: 1.733em;
+}
+
+/* line 18, ../sass/main.sass */
+h2 {
+  font-size: 1.625em;
+  line-height: 2em;
+}
+
+/* line 20, ../sass/main.sass */
+h3 {
+  font-size: 1.313em;
+  line-height: 1.238em;
+}
+
+/* line 22, ../sass/main.sass */
+h4, h5, h6 {
+  font-size: 1.125em;
+  line-height: 1.444em;
+}
+
+/* line 25, ../sass/main.sass */
+p {
+  line-height: 26px;
+}
+
+/* line 28, ../sass/main.sass */
+a {
+  color: #1567b6;
+  text-decoration: none;
+}
+/* line 4, /Users/jch/.rvm/gems/ruby-1.9.2-p180-patched/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+a:hover {
+  text-decoration: underline;
+}
+/* line 31, ../sass/main.sass */
+a:visited {
+  color: black;
+}
+
+/* line 34, ../sass/main.sass */
+hr {
+  border: none;
+  margin: 0 auto;
+  width: 100px;
+  background: url(../images/stripes.png);
+  background-size: cover;
+  margin-top: 0em;
+  padding-top: 1.625em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
+
+/* line 42, ../sass/main.sass */
+img, embed, object, video {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* line 46, ../sass/main.sass */
+.heading {
+  font-family: Times, serif;
+}
+
+/* line 49, ../sass/main.sass */
+.button {
+  display: block;
+  text-align: center;
+  width: 7.15em;
+  font-weight: bold;
+  line-height: 1.625em;
+  font-size: 0.75em;
+  line-height: 2.167em;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+/* line 6, /Users/jch/.rvm/gems/ruby-1.9.2-p180-patched/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+.button:active, .button:focus {
+  outline: none;
+}
+
+/* line 60, ../sass/main.sass */
+#header-wrapper {
+  display: hidden;
+  position: absolute;
+  height: 4.875em;
+  width: 100%;
+  z-index: -1;
+  background-color: #222222;
+  color: white;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(170, 170, 170, 0.1)), color-stop(100%, rgba(34, 34, 34, 0.1))), url(../images/dark_leather.png);
+  background: -webkit-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
+  background: -moz-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
+  background: -o-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
+  background: -ms-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
+  background: linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+/* line 69, ../sass/main.sass */
+#wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* line 73, ../sass/main.sass */
+#header {
+  position: relative;
+  text-decoration: none;
+  font-family: "Yellowtail", cursive;
+}
+/* line 78, ../sass/main.sass */
+#header a {
+  color: white;
+}
+/* line 80, ../sass/main.sass */
+#header #logo {
+  display: block;
+  font-size: 3.438em;
+  line-height: 1.418em;
+  background: url(../images/stripes.png) 0% 100% no-repeat;
+  text-shadow: black 1px 2px 0;
+}
+/* line 85, ../sass/main.sass */
+#header #nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 4.875em;
+}
+/* line 90, ../sass/main.sass */
+#header #nav li {
+  float: left;
+}
+/* line 92, ../sass/main.sass */
+#header #nav li a {
+  display: block;
+  padding: 0 1.625em;
+  line-height: 4.875em;
+}
+
+/* line 97, ../sass/main.sass */
+#content-wrapper, #footer {
+  padding: 0 1.625em;
+}
+
+/* line 100, ../sass/main.sass */
+#content-wrapper {
+  background-color: white;
+  margin-top: 1.625em;
+  padding-top: 1.625em;
+  padding-bottom: 1.625em;
+  margin-bottom: 0em;
+  -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 109, ../sass/main.sass */
+#content-wrapper #sidebar .section {
+  margin-bottom: 1.625em;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 113, ../sass/main.sass */
+#content-wrapper #sidebar .follow li {
+  line-height: 3.25em;
+  margin-bottom: 1.625em;
+}
+/* line 116, ../sass/main.sass */
+#content-wrapper #sidebar .follow li a {
+  display: block;
+  padding-left: 60px;
+  text-align: left;
+  color: white;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+/* line 123, ../sass/main.sass */
+#content-wrapper #sidebar .follow li a:hover {
+  color: #ef2422;
+}
+/* line 125, ../sass/main.sass */
+#content-wrapper #sidebar .follow li .facebook {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(170, 170, 170, 0.1)), color-stop(100%, rgba(34, 34, 34, 0.1))), url("../images/facebook.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: -webkit-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/facebook.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: -moz-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/facebook.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: -o-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/facebook.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: -ms-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/facebook.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/facebook.png") 1em no-repeat, url(../images/dark_leather.png);
+}
+/* line 127, ../sass/main.sass */
+#content-wrapper #sidebar .follow li .twitter {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(170, 170, 170, 0.1)), color-stop(100%, rgba(34, 34, 34, 0.1))), url("../images/twitter.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: -webkit-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/twitter.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: -moz-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/twitter.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: -o-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/twitter.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: -ms-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/twitter.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/twitter.png") 1em no-repeat, url(../images/dark_leather.png);
+}
+/* line 129, ../sass/main.sass */
+#content-wrapper #sidebar .follow li .rss {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(170, 170, 170, 0.1)), color-stop(100%, rgba(34, 34, 34, 0.1))), url("../images/rss.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: -webkit-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/rss.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: -moz-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/rss.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: -o-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/rss.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: -ms-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/rss.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/rss.png") 1em no-repeat, url(../images/dark_leather.png);
+}
+/* line 131, ../sass/main.sass */
+#content-wrapper #sidebar .follow li .email {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(170, 170, 170, 0.1)), color-stop(100%, rgba(34, 34, 34, 0.1))), url("../images/email.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: -webkit-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/email.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: -moz-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/email.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: -o-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/email.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: -ms-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/email.png") 1em no-repeat, url(../images/dark_leather.png);
+  background: linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url("../images/email.png") 1em no-repeat, url(../images/dark_leather.png);
+}
+/* line 134, ../sass/main.sass */
+#content-wrapper #sidebar .other li {
+  margin-bottom: 1.625em;
+  font-size: 0.75em;
+  line-height: 2.167em;
+}
+/* line 137, ../sass/main.sass */
+#content-wrapper #sidebar .other li a {
+  position: relative;
+  display: block;
+}
+/* line 140, ../sass/main.sass */
+#content-wrapper #sidebar .other li a span {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  display: block;
+  padding: 0 1em;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+/* line 148, ../sass/main.sass */
+#content-wrapper #sidebar .other li a span:hover {
+  color: #ef2422;
+}
+
+/* line 151, ../sass/main.sass */
+#footer {
+  clear: both;
+  background-color: #222222;
+  color: white;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(170, 170, 170, 0.1)), color-stop(100%, rgba(34, 34, 34, 0.1))), url(../images/dark_leather.png);
+  background: -webkit-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
+  background: -moz-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
+  background: -o-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
+  background: -ms-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
+  background: linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
+  margin-top: 0em;
+  padding-top: 1.625em;
+  padding-bottom: 1.625em;
+  margin-bottom: 0em;
+  -moz-border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  -o-border-radius: 0px 0px 5px 5px;
+  -ms-border-radius: 0px 0px 5px 5px;
+  -khtml-border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 5px 5px;
+  margin-bottom: 1.625em;
+}
+
+/* wraps around bodies of text meant for reading */
+/* line 160, ../sass/main.sass */
+.content p {
+  margin-bottom: 16px;
+}
+
+/* line 164, ../sass/main.sass */
+.post {
+  margin-top: 0em;
+  padding-top: 1.625em;
+  padding-bottom: 1.625em;
+  margin-bottom: 0em;
+}
+/* line 167, ../sass/main.sass */
+.post:first-child {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 1.625em;
+  margin-bottom: 0em;
+}
+/* line 169, ../sass/main.sass */
+.post:last-child {
+  margin-top: 0em;
+  padding-top: 1.625em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
+/* line 177, ../sass/main.sass */
+.post .meta {
+  font-family: Arial, sans-serif;
+  color: #666666;
+  font-style: italic;
+  font-size: 0.813em;
+  line-height: 2em;
+}
+/* line 182, ../sass/main.sass */
+.post .meta .author {
+  line-height: 3.25em;
+}
+/* line 184, ../sass/main.sass */
+.post .meta .social {
+  margin-left: -5px;
+  height: 1.625em;
+  margin-bottom: 16px;
+}
+/* line 189, ../sass/main.sass */
+.post .meta .social a {
+  margin: 0 !important;
+  display: inline-block;
+  width: 80px !important;
+  padding-left: 5px;
+  position: relative;
+  vertical-align: top;
+}
+/* line 196, ../sass/main.sass */
+.post .meta .social a.addthis_button_google_plusone {
+  width: 60px !important;
+}
+/* line 198, ../sass/main.sass */
+.post .meta .social a iframe, .post .meta .social a div {
+  margin: 0 !important;
+  position: absolute;
+}
+/* line 202, ../sass/main.sass */
+.post .content {
+  clear: both;
+}
+/* line 204, ../sass/main.sass */
+.post .read-more::after {
+  content: " »";
+}
+
+/* Pagination */
+/* line 208, ../sass/main.sass */
+#pagination {
+  margin-top: 1.625em;
+  text-align: center;
+}
+/* line 211, ../sass/main.sass */
+#pagination a {
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  background-color: #d5151e;
+  margin-bottom: 1.625em;
+}
+/* line 218, ../sass/main.sass */
+#pagination a:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dd4b39), color-stop(100%, #b93b2a));
+  background: -webkit-linear-gradient(#dd4b39, #b93b2a);
+  background: -moz-linear-gradient(#dd4b39, #b93b2a);
+  background: -o-linear-gradient(#dd4b39, #b93b2a);
+  background: -ms-linear-gradient(#dd4b39, #b93b2a);
+  background: linear-gradient(#dd4b39, #b93b2a);
+}
+
+/* Post Show */
+/* line 222, ../sass/main.sass */
+#disqus_thread {
+  margin: 0 !important;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 1.625em;
+  margin-bottom: 0em;
+}
+
+/* Desktop */
+@media screen and (min-width: 800px) {
+  /* line 229, ../sass/main.sass */
+  #content-wrapper #main {
+    float: left;
+    width: 59%;
+    border-right: 1px dashed #cccccc;
+    padding: 0;
+    padding: 0 1.625em;
+  }
+  /* line 236, ../sass/main.sass */
+  #content-wrapper #sidebar {
+    float: left;
+    width: 30%;
+    padding: 0;
+    padding-left: 1.625em;
+  }
+  /* line 243, ../sass/main.sass */
+  #content-wrapper #sidebar .follow li a {
+    width: 55%;
+  }
+}
