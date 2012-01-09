@@ -15,8 +15,7 @@
   <?php endif; ?>
 
   <div class="content">
-    <?php the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
-    <?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
+    <?php the_content('<p>Continue reading <span class="meta-nav">&rarr;</span></p>'); ?>
   </div>
 </article>
 
