@@ -6,24 +6,34 @@
   +background(linear-gradient(rgba(#aaa, 0.1), rgba(#222, 0.1)), url(../images/dark_leather.png))
 
 =follow-button($image)
-  +background(linear-gradient(rgba(#aaa, 0.1), rgba(#222, 0.1)), url($image) $font-unit no-repeat, url(../images/dark_leather.png))
+  // +background(linear-gradient(rgba(#aaa, 0.1), rgba(#222, 0.1)), url($image) $font-unit no-repeat, url(../images/dark_leather.png))
+  +background(#f7f7f7 url($image) 0% 50% no-repeat)
 
+/* adjust-font-size-to doesn't like relative units */
+=adjust-font($scale)
+  +adjust-font-size-to($base-font-size * $scale)
+
+=heading
+  +adjust-font(1.7)
+
+/* Mobile */
+
++establish-baseline
 body
-  +establish-baseline
   font-family: Helvetica, sans-serif
   background: url(../images/light_alu.png)
 
-h1
-  +adjust-font-size-to(30px)
-h2
-  +adjust-font-size-to(26px)
-h3
-  +adjust-font-size-to(21px)
-h4, h5, h6
-  +adjust-font-size-to(18px)
+h1, .heading
+  +heading
 
-p
-  line-height: $base-line-height  // wasn't being set by +establish-baseline
+h1
+  +adjust-leading-to(1)
+h2
+  +adjust-font(1.5)
+h3
+  +adjust-font(1.3)
+h4, h5, h6
+  +adjust-font(1.1)
 
 a
   color: $link-color
@@ -43,6 +53,15 @@ img, embed, object, video
   width: 100%
   max-width: 100%
 
+/* Image Captions */
+.wp-caption
+  width: 100% !important
+
+.wp-caption-text
+  color: $secondary-text-color
+  font-style: italic
+  text-align: center
+
 .heading
   font-family: Times, serif
 
@@ -57,15 +76,6 @@ img, embed, object, video
   +border-radius(2px)
   +single-box-shadow(rgba(#000, 0.2), 1px, 1px, 1px)
 
-#header-wrapper
-  display: hidden
-  position: absolute
-  height: rhythm(3)
-  width: 100%
-  z-index: -1
-  +leather
-  +single-box-shadow
-
 #wrapper
   width: 95%
   margin: 0 auto
@@ -73,26 +83,15 @@ img, embed, object, video
 #header
   position: relative
   text-decoration: none
-  // font-family: 'Bangers', cursive
   font-family: 'Yellowtail', cursive
   a
     color: #fff
   #logo
     display: block
-    +adjust-font-size-to(55px)
-    +background($stripes-url 0% 100% no-repeat)
-    +single-text-shadow(#000, 1px, 2px, 0)
-  #nav
-    position: absolute
-    top: 0
-    right: 0
-    height: rhythm(3)
-    li
-      float: left
-      a
-        display: block
-        padding: 0 rhythm(1)
-        +adjust-leading-to(3)
+    text-align: center
+    letter-spacing: -1px
+    +adjust-font(3)
+    +leather
 
 #content-wrapper, #footer
   padding: 0 rhythm(1)
@@ -103,23 +102,31 @@ img, embed, object, video
   +single-box-shadow(rgba(#000, 0.3), 0px, 0px, 4px)
   +clearfix
 
-  #main
-
   #sidebar
     .section
       +trailer(1)
       +clearfix
+      &.text
+        ul
+          border: 1px solid #dedede
+          padding: 0 1em
+          li
+            +adjust-leading-to(2)
+            border-bottom: 1px solid #dedede
+            &:last-child
+              border-bottom: none
+
+      h2
+        text-align: center
+        color: #fff
+        +adjust-font(1.3)
+        +background(linear-gradient($ferrari-color, darken($ferrari-color, 25%)))
     .follow
       li
-        +adjust-leading-to(2)
-        +trailer(1)
         a
           display: block
-          padding-left: 60px
+          padding-left: 40px
           text-align: left
-          color: #fff
-          +border-radius(4px)
-          +single-box-shadow
           &:hover
             color: $ferrari-color
         .facebook
@@ -131,6 +138,8 @@ img, embed, object, video
         .email
           +follow-button('../images/email.png')
     .other
+      ul
+        padding: 0
       li 
         +trailer(1)
         +adjust-font-size-to(12px)
@@ -168,7 +177,6 @@ img, embed, object, video
     +rhythm(0, 0, 1, 0)
   &:last-child
     +rhythm(0, 1, 0, 0)
-  .title
   .lead
     // images need to be in the correct aspect ratio to not break rhythm
     // for now, using overflow hidden to keep rhythm
@@ -184,7 +192,6 @@ img, embed, object, video
     .social
       margin-left: -5px // sigh
       height: rhythm(1)
-      // +trailer(1)
       margin-bottom: $base-font-size // breaks rhythm
       a
         margin: 0 !important
@@ -210,13 +217,14 @@ img, embed, object, video
   text-align: center
   a
     display: inline-block
-    text-transform: uppercase
     color: #fff
-    background-color: #d5151E // #D14836 // $ferrari-color
-    // +background(linear-gradient(#dd4b39,#d14836))
+    background-color: $ferrari-color
+    padding: 0 1em
+    width: 9em
+    +adjust-leading-to(2)
     +trailer(1)
     &:hover
-      +background(linear-gradient(#dd4b39,darken(#d14836, 7%)))
+      +background(linear-gradient($ferrari-color,darken($ferrari-color, 10%)))
 
 /* Post Show */
 #disqus_thread  // vertical rhythm doable, but too much work
@@ -224,21 +232,37 @@ img, embed, object, video
   +rhythm(0, 0, 1, 0)
 
 /* Desktop */
+/* TODO: how to figure out for ipad */
 @media screen and (min-width: 800px)
-  #content-wrapper
-    #main
-      float: left
-      width: 59%
-      border-right: 1px dashed #ccc
-      padding: 0
-      padding: 0 rhythm(1) // widens on top of mobile layout
+  $base-line-height: 24px // not sure if this does what i want
+  +establish-baseline(16px)
+  #header
+    +leather
+    +single-text-shadow(#000, 1px, 2px, 0)
+    #logo
+      max-width: 1000px // slightly less b/c of padding in wrapper
+      margin: 0 auto
+      text-align: left
+      padding-left: 1em
+      +adjust-font-size-to(55px)
+      +background($stripes-url 0% 0% no-repeat)
 
-    #sidebar
-      float: left
-      width: 30%
-      padding: 0
-      padding-left: rhythm(1)
-      .follow
-        li
-          a
-            width: 55%
+  #wrapper
+    max-width: 1024px
+    #content-wrapper
+      #main
+        float: left
+        width: 59%
+        border-right: 1px dashed #ccc
+        padding: 0
+        padding: 0 rhythm(1) // widens on top of mobile layout
+
+      #sidebar
+        float: left
+        width: 30%
+        padding: 0
+        padding-left: rhythm(1)
+        .follow
+          li
+            a
+              width: 55%

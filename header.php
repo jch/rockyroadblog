@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Rocky Road Blog</title>
+    <meta name="viewport" content="initial-scale=1.0, width=320px" />
     <!-- cursive -->
     <link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
     <!-- all caps blocky -->
@@ -25,13 +26,10 @@
     })
     </script>
     <!-- for styling only -->
-    <div id="header-wrapper"></div>
+    <!-- <div id="header-wrapper"></div> -->
+    <div id="header">
+      <a id="logo" href="<?php echo home_url(); ?>">Rocky Road Blog</a>
+    </div>
     <div id='wrapper'>
-      <div id="header">
-        <a id="logo" href="<?php echo home_url(); ?>">Rocky Road Blog</a>
-        <ul id="nav">
-          <?php wp_list_pages('title_li='); ?>
-        </ul>
-      </div>
       <div id='content-wrapper'>
         <div id="main">

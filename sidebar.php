@@ -1,5 +1,11 @@
 <div id="sidebar">
-  <div class='section follow'>
+  <div class='section text pages'>
+    <h2 class='heading'>Pages</h2>
+    <ul id="pages">
+      <?php wp_list_pages('title_li='); ?>
+    </ul>
+  </div>
+  <div class='section text follow'>
     <h2 class='heading'>Follow us</h2>
     <ul>
       <li><a class='facebook' target='_blank' href='http://www.facebook.com/pages/Rocky-Road-Blog/137981422954604'>Facebook</a></li>
@@ -11,7 +17,7 @@
   <div class='section other'>
     <h2 class='heading'>Recent Stories</h2>
     <ul>
-       <?php foreach (c2c_get_recently_commented(5, "") as $post):  ?>
+       <?php foreach (c2c_get_recent_posts(5, "") as $post):  ?>
          <li>
           <a class='heading' href='<?php echo get_permalink($post->ID); ?>'>
             <?php echo get_the_post_thumbnail($post->ID, 'thumbnail'); ?>
