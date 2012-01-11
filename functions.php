@@ -2,6 +2,7 @@
 if ( function_exists( 'add_theme_support' ) ) { 
   add_theme_support( 'post-thumbnails', array( 'post' ) );
 }
+if ( function_exists('register_sidebar') ) { register_sidebar(); }
 
 /**
  * http://justintadlock.com/archives/2009/11/16/everything-you-need-to-know-about-wordpress-2-9s-post-image-feature
