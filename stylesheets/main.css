@@ -1,4 +1,73 @@
 @charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
 /* adjust-font-size-to doesn't like relative units */
 /* Mobile */
 /* line 53, /Users/jch/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
@@ -12,44 +81,44 @@ html > body {
   font-size: 15px;
 }
 
-/* line 18, ../sass/main.sass */
+/* line 19, ../sass/main.sass */
 body {
   font-family: Georgia, Times, serif;
   background: url(../images/light_alu.png);
 }
 
-/* line 22, ../sass/main.sass */
+/* line 23, ../sass/main.sass */
 .heading {
   font-size: 1.7em;
   line-height: 1.882em;
 }
 
-/* line 25, ../sass/main.sass */
+/* line 26, ../sass/main.sass */
 h1 {
   font-size: 1.7em;
   line-height: 1.3em;
   padding-bottom: 0.465em;
 }
 
-/* line 30, ../sass/main.sass */
+/* line 31, ../sass/main.sass */
 h2 {
   font-size: 1.5em;
   line-height: 2.133em;
 }
 
-/* line 32, ../sass/main.sass */
+/* line 33, ../sass/main.sass */
 h3 {
   font-size: 1.3em;
   line-height: 1.231em;
 }
 
-/* line 34, ../sass/main.sass */
+/* line 35, ../sass/main.sass */
 h4, h5, h6 {
   font-size: 1.1em;
   line-height: 1.455em;
 }
 
-/* line 37, ../sass/main.sass */
+/* line 38, ../sass/main.sass */
 a {
   color: #1567b6;
   text-decoration: none;
@@ -58,12 +127,12 @@ a {
 a:hover {
   text-decoration: underline;
 }
-/* line 40, ../sass/main.sass */
+/* line 41, ../sass/main.sass */
 a:visited {
   color: #115596;
 }
 
-/* line 43, ../sass/main.sass */
+/* line 44, ../sass/main.sass */
 hr {
   border: none;
   margin: 0 auto;
@@ -76,37 +145,37 @@ hr {
   margin-bottom: 0em;
 }
 
-/* line 51, ../sass/main.sass */
+/* line 52, ../sass/main.sass */
 img, embed, object, video {
   width: 100%;
   max-width: 575px;
 }
 
-/* line 55, ../sass/main.sass */
+/* line 56, ../sass/main.sass */
 blockquote {
   margin: 0 1em;
   font-style: italic;
 }
 
-/* line 59, ../sass/main.sass */
+/* line 60, ../sass/main.sass */
 strong {
   font-weight: bold;
 }
 
 /* Image Captions */
-/* line 63, ../sass/main.sass */
+/* line 64, ../sass/main.sass */
 .wp-caption {
   width: 100% !important;
 }
 
-/* line 66, ../sass/main.sass */
+/* line 67, ../sass/main.sass */
 .wp-caption-text {
   color: #666666;
   font-style: italic;
   text-align: center;
 }
 
-/* line 71, ../sass/main.sass */
+/* line 72, ../sass/main.sass */
 .button {
   display: block;
   text-align: center;
@@ -134,23 +203,23 @@ strong {
   outline: none;
 }
 
-/* line 82, ../sass/main.sass */
+/* line 83, ../sass/main.sass */
 #wrapper {
   width: 95%;
   margin: 0 auto;
 }
 
-/* line 86, ../sass/main.sass */
+/* line 87, ../sass/main.sass */
 #header {
   position: relative;
   text-decoration: none;
   font-family: "Yellowtail", cursive;
 }
-/* line 90, ../sass/main.sass */
+/* line 91, ../sass/main.sass */
 #header a {
   color: white;
 }
-/* line 92, ../sass/main.sass */
+/* line 93, ../sass/main.sass */
 #header #logo {
   display: block;
   text-align: center;
@@ -167,12 +236,12 @@ strong {
   background: linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
 }
 
-/* line 99, ../sass/main.sass */
+/* line 100, ../sass/main.sass */
 #content-wrapper, #footer {
   padding: 0 1.6em;
 }
 
-/* line 102, ../sass/main.sass */
+/* line 103, ../sass/main.sass */
 #content-wrapper {
   background-color: white;
   margin-top: 1.6em;
@@ -186,28 +255,28 @@ strong {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 109, ../sass/main.sass */
+/* line 110, ../sass/main.sass */
 #content-wrapper #sidebar .section {
   margin-bottom: 1.6em;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 112, ../sass/main.sass */
+/* line 113, ../sass/main.sass */
 #content-wrapper #sidebar .section ul {
   border: 1px solid #dedede;
   padding: 0 1em;
 }
-/* line 115, ../sass/main.sass */
+/* line 116, ../sass/main.sass */
 #content-wrapper #sidebar .section ul li {
   line-height: 1.4em;
   padding: 0.8em 0em;
   border-bottom: 1px solid #dedede;
 }
-/* line 120, ../sass/main.sass */
+/* line 121, ../sass/main.sass */
 #content-wrapper #sidebar .section ul li:last-child {
   border-bottom: none;
 }
-/* line 123, ../sass/main.sass */
+/* line 124, ../sass/main.sass */
 #content-wrapper #sidebar .section h2 {
   text-align: center;
   color: white;
@@ -220,30 +289,30 @@ strong {
   background: -ms-linear-gradient(#ef2422, #880b0a);
   background: linear-gradient(#ef2422, #880b0a);
 }
-/* line 130, ../sass/main.sass */
+/* line 131, ../sass/main.sass */
 #content-wrapper #sidebar .follow li a {
   display: block;
   padding-left: 40px;
   text-align: left;
 }
-/* line 134, ../sass/main.sass */
+/* line 135, ../sass/main.sass */
 #content-wrapper #sidebar .follow li .facebook {
   background: url("../images/facebook.png") 0% 50% no-repeat;
 }
-/* line 136, ../sass/main.sass */
+/* line 137, ../sass/main.sass */
 #content-wrapper #sidebar .follow li .twitter {
   background: url("../images/twitter.png") 0% 50% no-repeat;
 }
-/* line 138, ../sass/main.sass */
+/* line 139, ../sass/main.sass */
 #content-wrapper #sidebar .follow li .rss {
   background: url("../images/rss.png") 0% 50% no-repeat;
 }
-/* line 140, ../sass/main.sass */
+/* line 141, ../sass/main.sass */
 #content-wrapper #sidebar .follow li .email {
   background: url("../images/email.png") 0% 50% no-repeat;
 }
 
-/* line 143, ../sass/main.sass */
+/* line 144, ../sass/main.sass */
 #footer {
   clear: both;
   background-color: #222222;
@@ -268,33 +337,33 @@ strong {
 }
 
 /* wraps around bodies of text meant for reading */
-/* line 152, ../sass/main.sass */
+/* line 153, ../sass/main.sass */
 .content p {
   margin-bottom: 15px;
 }
 
-/* line 156, ../sass/main.sass */
+/* line 157, ../sass/main.sass */
 .post {
   margin-top: 0em;
   padding-top: 1.6em;
   padding-bottom: 1.6em;
   margin-bottom: 0em;
 }
-/* line 159, ../sass/main.sass */
+/* line 160, ../sass/main.sass */
 .post:first-child {
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 1.6em;
   margin-bottom: 0em;
 }
-/* line 161, ../sass/main.sass */
+/* line 162, ../sass/main.sass */
 .post:last-child {
   margin-top: 0em;
   padding-top: 1.6em;
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
-/* line 168, ../sass/main.sass */
+/* line 169, ../sass/main.sass */
 .post .meta {
   font-family: Arial, sans-serif;
   color: #666666;
@@ -302,17 +371,17 @@ strong {
   font-size: 0.867em;
   line-height: 1.846em;
 }
-/* line 173, ../sass/main.sass */
+/* line 174, ../sass/main.sass */
 .post .meta .author {
   line-height: 3.2em;
 }
-/* line 175, ../sass/main.sass */
+/* line 176, ../sass/main.sass */
 .post .meta .social {
   margin-left: -5px;
   height: 1.6em;
   margin-bottom: 15px;
 }
-/* line 179, ../sass/main.sass */
+/* line 180, ../sass/main.sass */
 .post .meta .social a {
   margin: 0 !important;
   display: inline-block;
@@ -321,31 +390,31 @@ strong {
   position: relative;
   vertical-align: top;
 }
-/* line 186, ../sass/main.sass */
+/* line 187, ../sass/main.sass */
 .post .meta .social a.addthis_button_google_plusone {
   width: 60px !important;
 }
-/* line 188, ../sass/main.sass */
+/* line 189, ../sass/main.sass */
 .post .meta .social a iframe, .post .meta .social a div {
   margin: 0 !important;
   position: absolute;
 }
-/* line 192, ../sass/main.sass */
+/* line 193, ../sass/main.sass */
 .post .content {
   clear: both;
 }
-/* line 194, ../sass/main.sass */
+/* line 195, ../sass/main.sass */
 .post .read-more::after {
   content: " »";
 }
 
 /* Pagination */
-/* line 198, ../sass/main.sass */
+/* line 199, ../sass/main.sass */
 #pagination {
   margin-top: 1.6em;
   text-align: center;
 }
-/* line 201, ../sass/main.sass */
+/* line 202, ../sass/main.sass */
 #pagination a {
   display: inline-block;
   color: white;
@@ -355,7 +424,7 @@ strong {
   line-height: 3.2em;
   margin-bottom: 1.6em;
 }
-/* line 209, ../sass/main.sass */
+/* line 210, ../sass/main.sass */
 #pagination a:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ef2422), color-stop(100%, #cf110f));
   background: -webkit-linear-gradient(#ef2422, #cf110f);
@@ -366,7 +435,7 @@ strong {
 }
 
 /* Post Show */
-/* line 213, ../sass/main.sass */
+/* line 214, ../sass/main.sass */
 #disqus_thread {
   margin: 0 !important;
   margin-top: 0em;
@@ -378,7 +447,7 @@ strong {
 /* Desktop */
 /* TODO: how to figure out for ipad */
 @media screen and (min-width: 800px) {
-  /* line 220, ../sass/main.sass */
+  /* line 221, ../sass/main.sass */
   #header {
     background-color: #222222;
     color: white;
@@ -390,7 +459,7 @@ strong {
     background: linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
     text-shadow: black 1px 2px 0;
   }
-  /* line 223, ../sass/main.sass */
+  /* line 224, ../sass/main.sass */
   #header #logo {
     max-width: 1000px;
     margin: 0 auto;
@@ -401,11 +470,11 @@ strong {
     background: url(../images/stripes.png) 0% 0% no-repeat;
   }
 
-  /* line 231, ../sass/main.sass */
+  /* line 232, ../sass/main.sass */
   #wrapper {
     max-width: 1024px;
   }
-  /* line 234, ../sass/main.sass */
+  /* line 235, ../sass/main.sass */
   #wrapper #content-wrapper #main {
     float: left;
     width: 59%;
@@ -413,14 +482,14 @@ strong {
     padding: 0;
     padding: 0 1.6em;
   }
-  /* line 241, ../sass/main.sass */
+  /* line 242, ../sass/main.sass */
   #wrapper #content-wrapper #sidebar {
     float: left;
     width: 30%;
     padding: 0;
     padding-left: 1.6em;
   }
-  /* line 248, ../sass/main.sass */
+  /* line 249, ../sass/main.sass */
   #wrapper #content-wrapper #sidebar .follow li a {
     width: 55%;
   }
