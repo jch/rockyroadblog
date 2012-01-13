@@ -1,74 +1,69 @@
 @charset "UTF-8";
 /* adjust-font-size-to doesn't like relative units */
 /* Mobile */
-/* line 53, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 53, /Users/jch/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 body {
-  font-size: 87.5%;
-  line-height: 1.5em;
+  font-size: 93.75%;
+  line-height: 1.6em;
 }
 
-/* line 57, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 57, /Users/jch/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html > body {
-  font-size: 14px;
+  font-size: 15px;
 }
 
-/* line 19, ../sass/main.sass */
+/* line 18, ../sass/main.sass */
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: Georgia, Times, serif;
   background: url(../images/light_alu.png);
 }
 
-/* line 23, ../sass/main.sass */
-h1, .heading {
-  font-family: Georgia, Times, serif;
-}
-
-/* line 26, ../sass/main.sass */
+/* line 22, ../sass/main.sass */
 .heading {
   font-size: 1.7em;
-  line-height: 1.765em;
+  line-height: 1.882em;
 }
 
-/* line 29, ../sass/main.sass */
+/* line 25, ../sass/main.sass */
 h1 {
   font-size: 1.7em;
   line-height: 1.3em;
   padding-bottom: 0.465em;
 }
 
-/* line 34, ../sass/main.sass */
+/* line 30, ../sass/main.sass */
 h2 {
   font-size: 1.5em;
-  line-height: 2em;
+  line-height: 2.133em;
 }
 
-/* line 36, ../sass/main.sass */
+/* line 32, ../sass/main.sass */
 h3 {
   font-size: 1.3em;
-  line-height: 2.308em;
+  line-height: 1.231em;
 }
 
-/* line 38, ../sass/main.sass */
+/* line 34, ../sass/main.sass */
 h4, h5, h6 {
   font-size: 1.1em;
-  line-height: 1.364em;
+  line-height: 1.455em;
 }
 
-/* line 41, ../sass/main.sass */
+/* line 37, ../sass/main.sass */
 a {
   color: #1567b6;
   text-decoration: none;
 }
-/* line 4, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, /Users/jch/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 a:hover {
   text-decoration: underline;
 }
-/* line 44, ../sass/main.sass */
+/* line 40, ../sass/main.sass */
 a:visited {
   color: #115596;
 }
 
-/* line 47, ../sass/main.sass */
+/* line 43, ../sass/main.sass */
 hr {
   border: none;
   margin: 0 auto;
@@ -76,50 +71,50 @@ hr {
   background: url(../images/stripes.png);
   background-size: cover;
   margin-top: 0em;
-  padding-top: 1.5em;
+  padding-top: 1.6em;
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
 
-/* line 55, ../sass/main.sass */
+/* line 51, ../sass/main.sass */
 img, embed, object, video {
   width: 100%;
-  max-width: 100%;
+  max-width: 575px;
 }
 
-/* line 59, ../sass/main.sass */
+/* line 55, ../sass/main.sass */
 blockquote {
   margin: 0 1em;
   font-style: italic;
 }
 
-/* line 63, ../sass/main.sass */
+/* line 59, ../sass/main.sass */
 strong {
   font-weight: bold;
 }
 
 /* Image Captions */
-/* line 67, ../sass/main.sass */
+/* line 63, ../sass/main.sass */
 .wp-caption {
   width: 100% !important;
 }
 
-/* line 70, ../sass/main.sass */
+/* line 66, ../sass/main.sass */
 .wp-caption-text {
   color: #666666;
   font-style: italic;
   text-align: center;
 }
 
-/* line 75, ../sass/main.sass */
+/* line 71, ../sass/main.sass */
 .button {
   display: block;
   text-align: center;
-  width: 6.6em;
+  width: 7.04em;
   font-weight: bold;
-  line-height: 1.5em;
-  font-size: 0.857em;
-  line-height: 1.75em;
+  line-height: 1.6em;
+  font-size: 0.8em;
+  line-height: 2em;
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
@@ -134,34 +129,34 @@ strong {
   -o-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
-/* line 6, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, /Users/jch/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .button:active, .button:focus {
   outline: none;
 }
 
-/* line 86, ../sass/main.sass */
+/* line 82, ../sass/main.sass */
 #wrapper {
   width: 95%;
   margin: 0 auto;
 }
 
-/* line 90, ../sass/main.sass */
+/* line 86, ../sass/main.sass */
 #header {
   position: relative;
   text-decoration: none;
   font-family: "Yellowtail", cursive;
 }
-/* line 94, ../sass/main.sass */
+/* line 90, ../sass/main.sass */
 #header a {
   color: white;
 }
-/* line 96, ../sass/main.sass */
+/* line 92, ../sass/main.sass */
 #header #logo {
   display: block;
   text-align: center;
   letter-spacing: -1px;
   font-size: 3em;
-  line-height: 1.5em;
+  line-height: 1.6em;
   background-color: #222222;
   color: white;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(170, 170, 170, 0.1)), color-stop(100%, rgba(34, 34, 34, 0.1))), url(../images/dark_leather.png);
@@ -172,17 +167,17 @@ strong {
   background: linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
 }
 
-/* line 103, ../sass/main.sass */
+/* line 99, ../sass/main.sass */
 #content-wrapper, #footer {
-  padding: 0 1.5em;
+  padding: 0 1.6em;
 }
 
-/* line 106, ../sass/main.sass */
+/* line 102, ../sass/main.sass */
 #content-wrapper {
   background-color: white;
-  margin-top: 1.5em;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  margin-top: 1.6em;
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
   margin-bottom: 0em;
   -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
@@ -191,33 +186,33 @@ strong {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 113, ../sass/main.sass */
+/* line 109, ../sass/main.sass */
 #content-wrapper #sidebar .section {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.6em;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 116, ../sass/main.sass */
+/* line 112, ../sass/main.sass */
 #content-wrapper #sidebar .section ul {
   border: 1px solid #dedede;
   padding: 0 1em;
 }
-/* line 119, ../sass/main.sass */
+/* line 115, ../sass/main.sass */
 #content-wrapper #sidebar .section ul li {
   line-height: 1.4em;
   padding: 0.8em 0em;
   border-bottom: 1px solid #dedede;
 }
-/* line 124, ../sass/main.sass */
+/* line 120, ../sass/main.sass */
 #content-wrapper #sidebar .section ul li:last-child {
   border-bottom: none;
 }
-/* line 127, ../sass/main.sass */
+/* line 123, ../sass/main.sass */
 #content-wrapper #sidebar .section h2 {
   text-align: center;
   color: white;
-  font-size: 1.3em;
-  line-height: 2.308em;
+  font-size: 1.4em;
+  line-height: 2.286em;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ef2422), color-stop(100%, #880b0a));
   background: -webkit-linear-gradient(#ef2422, #880b0a);
   background: -moz-linear-gradient(#ef2422, #880b0a);
@@ -225,30 +220,30 @@ strong {
   background: -ms-linear-gradient(#ef2422, #880b0a);
   background: linear-gradient(#ef2422, #880b0a);
 }
-/* line 134, ../sass/main.sass */
+/* line 130, ../sass/main.sass */
 #content-wrapper #sidebar .follow li a {
   display: block;
   padding-left: 40px;
   text-align: left;
 }
-/* line 138, ../sass/main.sass */
+/* line 134, ../sass/main.sass */
 #content-wrapper #sidebar .follow li .facebook {
-  background: #f7f7f7 url("../images/facebook.png") 0% 50% no-repeat;
+  background: url("../images/facebook.png") 0% 50% no-repeat;
+}
+/* line 136, ../sass/main.sass */
+#content-wrapper #sidebar .follow li .twitter {
+  background: url("../images/twitter.png") 0% 50% no-repeat;
+}
+/* line 138, ../sass/main.sass */
+#content-wrapper #sidebar .follow li .rss {
+  background: url("../images/rss.png") 0% 50% no-repeat;
 }
 /* line 140, ../sass/main.sass */
-#content-wrapper #sidebar .follow li .twitter {
-  background: #f7f7f7 url("../images/twitter.png") 0% 50% no-repeat;
-}
-/* line 142, ../sass/main.sass */
-#content-wrapper #sidebar .follow li .rss {
-  background: #f7f7f7 url("../images/rss.png") 0% 50% no-repeat;
-}
-/* line 144, ../sass/main.sass */
 #content-wrapper #sidebar .follow li .email {
-  background: #f7f7f7 url("../images/email.png") 0% 50% no-repeat;
+  background: url("../images/email.png") 0% 50% no-repeat;
 }
 
-/* line 147, ../sass/main.sass */
+/* line 143, ../sass/main.sass */
 #footer {
   clear: both;
   background-color: #222222;
@@ -260,8 +255,8 @@ strong {
   background: -ms-linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
   background: linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
   margin-top: 0em;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
   margin-bottom: 0em;
   -moz-border-radius: 0px 0px 5px 5px;
   -webkit-border-radius: 0px 0px 5px 5px;
@@ -269,55 +264,55 @@ strong {
   -ms-border-radius: 0px 0px 5px 5px;
   -khtml-border-radius: 0px 0px 5px 5px;
   border-radius: 0px 0px 5px 5px;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.6em;
 }
 
 /* wraps around bodies of text meant for reading */
-/* line 156, ../sass/main.sass */
+/* line 152, ../sass/main.sass */
 .content p {
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
-/* line 160, ../sass/main.sass */
+/* line 156, ../sass/main.sass */
 .post {
   margin-top: 0em;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
   margin-bottom: 0em;
 }
-/* line 163, ../sass/main.sass */
+/* line 159, ../sass/main.sass */
 .post:first-child {
   margin-top: 0em;
   padding-top: 0em;
-  padding-bottom: 1.5em;
+  padding-bottom: 1.6em;
   margin-bottom: 0em;
 }
-/* line 165, ../sass/main.sass */
+/* line 161, ../sass/main.sass */
 .post:last-child {
   margin-top: 0em;
-  padding-top: 1.5em;
+  padding-top: 1.6em;
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
-/* line 172, ../sass/main.sass */
+/* line 168, ../sass/main.sass */
 .post .meta {
   font-family: Arial, sans-serif;
   color: #666666;
   font-style: italic;
-  font-size: 0.929em;
-  line-height: 1.615em;
+  font-size: 0.867em;
+  line-height: 1.846em;
 }
-/* line 177, ../sass/main.sass */
+/* line 173, ../sass/main.sass */
 .post .meta .author {
-  line-height: 3em;
+  line-height: 3.2em;
 }
-/* line 179, ../sass/main.sass */
+/* line 175, ../sass/main.sass */
 .post .meta .social {
   margin-left: -5px;
-  height: 1.5em;
-  margin-bottom: 14px;
+  height: 1.6em;
+  margin-bottom: 15px;
 }
-/* line 183, ../sass/main.sass */
+/* line 179, ../sass/main.sass */
 .post .meta .social a {
   margin: 0 !important;
   display: inline-block;
@@ -326,41 +321,41 @@ strong {
   position: relative;
   vertical-align: top;
 }
-/* line 190, ../sass/main.sass */
+/* line 186, ../sass/main.sass */
 .post .meta .social a.addthis_button_google_plusone {
   width: 60px !important;
 }
-/* line 192, ../sass/main.sass */
+/* line 188, ../sass/main.sass */
 .post .meta .social a iframe, .post .meta .social a div {
   margin: 0 !important;
   position: absolute;
 }
-/* line 196, ../sass/main.sass */
+/* line 192, ../sass/main.sass */
 .post .content {
   clear: both;
 }
-/* line 198, ../sass/main.sass */
+/* line 194, ../sass/main.sass */
 .post .read-more::after {
   content: " »";
 }
 
 /* Pagination */
-/* line 202, ../sass/main.sass */
+/* line 198, ../sass/main.sass */
 #pagination {
-  margin-top: 1.5em;
+  margin-top: 1.6em;
   text-align: center;
 }
-/* line 205, ../sass/main.sass */
+/* line 201, ../sass/main.sass */
 #pagination a {
   display: inline-block;
   color: white;
   background-color: #ef2422;
   padding: 0 1em;
   width: 9em;
-  line-height: 3em;
-  margin-bottom: 1.5em;
+  line-height: 3.2em;
+  margin-bottom: 1.6em;
 }
-/* line 213, ../sass/main.sass */
+/* line 209, ../sass/main.sass */
 #pagination a:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ef2422), color-stop(100%, #cf110f));
   background: -webkit-linear-gradient(#ef2422, #cf110f);
@@ -371,30 +366,19 @@ strong {
 }
 
 /* Post Show */
-/* line 217, ../sass/main.sass */
+/* line 213, ../sass/main.sass */
 #disqus_thread {
   margin: 0 !important;
   margin-top: 0em;
   padding-top: 0em;
-  padding-bottom: 1.5em;
+  padding-bottom: 1.6em;
   margin-bottom: 0em;
 }
 
 /* Desktop */
 /* TODO: how to figure out for ipad */
 @media screen and (min-width: 800px) {
-  /* line 53, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-  body {
-    font-size: 100%;
-    line-height: 1.5em;
-  }
-
-  /* line 57, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-  html > body {
-    font-size: 16px;
-  }
-
-  /* line 226, ../sass/main.sass */
+  /* line 220, ../sass/main.sass */
   #header {
     background-color: #222222;
     color: white;
@@ -406,37 +390,37 @@ strong {
     background: linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
     text-shadow: black 1px 2px 0;
   }
-  /* line 229, ../sass/main.sass */
+  /* line 223, ../sass/main.sass */
   #header #logo {
     max-width: 1000px;
     margin: 0 auto;
     text-align: left;
     padding-left: 1em;
-    font-size: 3.929em;
+    font-size: 3.667em;
     line-height: 1.309em;
     background: url(../images/stripes.png) 0% 0% no-repeat;
   }
 
-  /* line 237, ../sass/main.sass */
+  /* line 231, ../sass/main.sass */
   #wrapper {
     max-width: 1024px;
   }
-  /* line 240, ../sass/main.sass */
+  /* line 234, ../sass/main.sass */
   #wrapper #content-wrapper #main {
     float: left;
     width: 59%;
     border-right: 1px dashed #cccccc;
     padding: 0;
-    padding: 0 1.714em;
+    padding: 0 1.6em;
   }
-  /* line 247, ../sass/main.sass */
+  /* line 241, ../sass/main.sass */
   #wrapper #content-wrapper #sidebar {
     float: left;
     width: 30%;
     padding: 0;
-    padding-left: 1.714em;
+    padding-left: 1.6em;
   }
-  /* line 254, ../sass/main.sass */
+  /* line 248, ../sass/main.sass */
   #wrapper #content-wrapper #sidebar .follow li a {
     width: 55%;
   }
