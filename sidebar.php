@@ -19,10 +19,9 @@
     <ul>
        <?php foreach (c2c_get_recent_posts(5, "") as $post):  ?>
          <li>
-          <a class='heading' href='<?php echo get_permalink($post->ID); ?>'>
-            <?php echo get_the_post_thumbnail($post->ID, 'thumbnail'); ?>
+          <a href='<?php echo get_permalink($post->ID); ?>'>
             <span><?php echo $post->post_title; ?></span>
-           </a>
+          </a>
        <?php endforeach; ?>
     </ul>
   </div>

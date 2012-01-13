@@ -13,9 +13,6 @@
 =adjust-font($scale)
   +adjust-font-size-to($base-font-size * $scale)
 
-=heading
-  +adjust-font(1.7)
-
 /* Mobile */
 
 +establish-baseline
@@ -24,10 +21,16 @@ body
   background: url(../images/light_alu.png)
 
 h1, .heading
-  +heading
+  font-family: Georgia, Times, serif
+
+.heading
+  +adjust-font(1.7)
 
 h1
-  +adjust-leading-to(1)
+  font-size: 1.7em
+  line-height: 1.3em
+  padding-bottom: 0.4649em
+
 h2
   +adjust-font(1.5)
 h3
@@ -39,7 +42,7 @@ a
   color: $link-color
   +hover-link
   &:visited
-    color: #000
+    color: darken($link-color, 7%)
 
 hr
   border: none
@@ -57,6 +60,9 @@ blockquote
   margin: 0 1em
   font-style: italic
 
+strong
+  font-weight: bold
+
 /* Image Captions */
 .wp-caption
   width: 100% !important
@@ -65,9 +71,6 @@ blockquote
   color: $secondary-text-color
   font-style: italic
   text-align: center
-
-.heading
-  font-family: Times, serif
 
 .button
   display: block
@@ -110,15 +113,16 @@ blockquote
     .section
       +trailer(1)
       +clearfix
-      &.text
-        ul
-          border: 1px solid #dedede
-          padding: 0 1em
-          li
-            +adjust-leading-to(2)
-            border-bottom: 1px solid #dedede
-            &:last-child
-              border-bottom: none
+      ul
+        border: 1px solid #dedede
+        padding: 0 1em
+        li
+          //+adjust-leading-to(2)
+          line-height: 1.4em
+          padding: 0.8em 0em
+          border-bottom: 1px solid #dedede
+          &:last-child
+            border-bottom: none
 
       h2
         text-align: center
@@ -131,8 +135,6 @@ blockquote
           display: block
           padding-left: 40px
           text-align: left
-          &:hover
-            color: $ferrari-color
         .facebook
           +follow-button('../images/facebook.png')
         .twitter
@@ -141,25 +143,6 @@ blockquote
           +follow-button('../images/rss.png')
         .email
           +follow-button('../images/email.png')
-    .other
-      ul
-        padding: 0
-      li 
-        +trailer(1)
-        +adjust-font-size-to(12px)
-        a  // slightly off image, so couldn't do transparent overlay
-          position: relative
-          display: block
-          span
-            position: absolute
-            top: 0px
-            width: 100%
-            display: block
-            padding: 0 $font-unit
-            background-color: rgba(#000, 0.7)
-            color: #fff
-            &:hover
-              color: $ferrari-color
 
 #footer
   clear: both
