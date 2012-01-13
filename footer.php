@@ -5,8 +5,8 @@
       <p>Copyright 2011 RockyRoadBlog. All rights reserved.</p>
     </div>
   </div><!-- wrapper -->
+
   <!-- BEGIN SOCIAL -->
-  <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
   <script type='text/javascript'>
     var addthis_config = {
       ui_use_css: false
@@ -15,6 +15,7 @@
   <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4efff341783ccb2b"></script>
   <!-- END SOCIAL -->
 
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-25073623-1']);

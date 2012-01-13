@@ -4,12 +4,13 @@
     <title><?php wp_title( '' ); ?></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=320px" />
-    <!-- cursive -->
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css" />
+        <!-- cursive -->
     <link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
     <!--[if IE]>
         <link href="<?php bloginfo('stylesheet_directory'); ?>/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
-    <link href="<?php bloginfo('stylesheet_directory'); ?>/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css" />
+
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/rockyroadblog" />
     <link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/rockyroadblog" />
     <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/rockyroadblog" />
