@@ -411,12 +411,14 @@ strong {
 /* line 206, ../sass/main.sass */
 #pagination a {
   display: inline-block;
-  width: 9em;
+  width: 8em;
   padding: 0.3em 0;
   text-transform: uppercase;
   font-family: "Helvetica Nueue", "Helvetica", sans-serif;
+  font-weight: bold;
   border: 1px solid #292929;
   color: white;
+  text-shadow: rgba(0, 0, 0, 0.246) -1px -1px 1px;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4c4c4c), color-stop(100%, #1b1b1b));
   background: -webkit-linear-gradient(top, #4c4c4c, #1b1b1b);
   background: -moz-linear-gradient(top, #4c4c4c, #1b1b1b);
@@ -437,7 +439,7 @@ strong {
 }
 
 /* Post Show */
-/* line 220, ../sass/main.sass */
+/* line 222, ../sass/main.sass */
 #disqus_thread {
   margin: 0 !important;
   margin-top: 0em;
@@ -449,7 +451,7 @@ strong {
 /* Desktop */
 /* TODO: how to figure out for ipad */
 @media screen and (min-width: 800px) {
-  /* line 227, ../sass/main.sass */
+  /* line 229, ../sass/main.sass */
   #header {
     background-color: #222222;
     color: white;
@@ -461,7 +463,7 @@ strong {
     background: linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
     text-shadow: black 1px 2px 0;
   }
-  /* line 230, ../sass/main.sass */
+  /* line 232, ../sass/main.sass */
   #header #logo {
     max-width: 1000px;
     margin: 0 auto;
@@ -472,11 +474,11 @@ strong {
     background: url(../images/stripes.png) 0% 0% no-repeat;
   }
 
-  /* line 238, ../sass/main.sass */
+  /* line 240, ../sass/main.sass */
   #wrapper {
     max-width: 1024px;
   }
-  /* line 241, ../sass/main.sass */
+  /* line 243, ../sass/main.sass */
   #wrapper #content-wrapper #main {
     float: left;
     width: 59%;
@@ -484,14 +486,14 @@ strong {
     padding: 0;
     padding: 0 1.6em;
   }
-  /* line 248, ../sass/main.sass */
+  /* line 250, ../sass/main.sass */
   #wrapper #content-wrapper #sidebar {
     float: left;
     width: 30%;
     padding: 0;
     padding-left: 1.6em;
   }
-  /* line 255, ../sass/main.sass */
+  /* line 257, ../sass/main.sass */
   #wrapper #content-wrapper #sidebar .follow li a {
     width: 55%;
   }
