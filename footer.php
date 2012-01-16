@@ -28,5 +28,6 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
+  <script src="https://raw.github.com/scottjehl/Respond/master/respond.min.js" type='text/javascript'></script>
   </body>
 </html>
