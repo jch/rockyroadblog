@@ -108,24 +108,28 @@ strong
 
   #sidebar
     .section
+      border: 1px solid #dedede
+      border-top: 2px solid #C71A00
+      padding: 0em 1em
       +trailer(1)
       +clearfix
       ul
-        border: 1px solid #dedede
-        padding: 0 1em
+        // border: 1px solid #dedede
+        // padding: 0 1em
         li
           //+adjust-leading-to(2)
           line-height: 1.4em
-          padding: 0.8em 0em
+          padding: 0.7em 0em
           border-bottom: 1px solid #dedede
           &:last-child
             border-bottom: none
 
       h2
-        text-align: center
-        color: #fff
-        +adjust-font(1.4)
-        +background(linear-gradient($ferrari-color, darken($ferrari-color, 25%)))
+        text-transform: uppercase
+        font-weight: bold
+        font-family: "Helvetica Nueue", "Helvetica", sans-serif
+        padding: 0.7em 0
+        +adjust-font(1.2)
     .follow
       li
         a
@@ -201,14 +205,16 @@ strong
   text-align: center
   a
     display: inline-block
-    color: #fff
-    background-color: $ferrari-color
-    padding: 0 1em
     width: 9em
-    +adjust-leading-to(2)
+    padding: 0.3em 0
+    text-transform: uppercase
+    font-family: "Helvetica Nueue", "Helvetica", sans-serif
+    border: 1px solid #292929
+    color: #fff
+    +background(linear-gradient(top, rgb(76, 76, 76), rgb(27, 27, 27)))
+    +border-radius(2px)
+    +single-box-shadow(rgba(#000, 0.24), 0px, 1px, 3px)
     +trailer(1)
-    &:hover
-      +background(linear-gradient($ferrari-color,darken($ferrari-color, 10%)))
 
 /* Post Show */
 #disqus_thread  // vertical rhythm doable, but too much work
