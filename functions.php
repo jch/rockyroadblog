@@ -18,10 +18,11 @@ function remove_image_dimensions( $html ) {
 add_filter( 'post_thumbnail_html', 'remove_image_dimensions', 10 );
 // add_filter( 'image_send_to_editor', 'remove_image_dimensions', 10 );
 // add_filter( 'get_image_tag', 'remove_image_dimensions', 10 );
-add_filter('the_content', 'remove_image_dimensions', 10);
-add_filter('the_content_feed', 'remove_image_dimensions', 10);
-add_filter('the_excerpt', 'remove_image_dimensions', 10);
-add_filter('the_excerpt_rss', 'remove_image_dimensions', 10);
+// Lower priority, or else shortcodes will have information stripped from them
+add_filter('the_content', 'remove_image_dimensions', 99);
+add_filter('the_content_feed', 'remove_image_dimensions', 99);
+add_filter('the_excerpt', 'remove_image_dimensions', 99);
+add_filter('the_excerpt_rss', 'remove_image_dimensions', 99);
 
 
 /**
