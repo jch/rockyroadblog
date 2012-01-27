@@ -11,8 +11,8 @@ if ( function_exists('register_sidebar') ) { register_sidebar(); }
  * width to 100% for feed readers
  */
 function remove_image_dimensions( $html ) {
-  $html = preg_replace('/width=".*?" height=".*?"/', 'width="100%"', $html);
-  $html = preg_replace('/style="width:.*?=".*?" height=".*?"/', 'width="100%"', $html);
+  $html = preg_replace('/(<img.*?)width=".*?" height=".*?"/', '$1width="100%"', $html);
+  $html = preg_replace('/(<img.*?)style="width:.*?=".*?" height=".*?"/', '$1width="100%"', $html);
   return $html;
 }
 add_filter( 'post_thumbnail_html', 'remove_image_dimensions', 10 );
