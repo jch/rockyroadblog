@@ -153,35 +153,34 @@ img, embed, object, video {
 
 /* line 56, ../sass/main.sass */
 img#wpstats {
-  width: 1px;
-  height: 1px;
+  display: none;
 }
 
-/* line 60, ../sass/main.sass */
+/* line 59, ../sass/main.sass */
 blockquote {
   margin: 0 1em;
   font-style: italic;
 }
 
-/* line 64, ../sass/main.sass */
+/* line 63, ../sass/main.sass */
 strong {
   font-weight: bold;
 }
 
 /* Image Captions */
-/* line 68, ../sass/main.sass */
+/* line 67, ../sass/main.sass */
 .wp-caption {
   width: 100% !important;
 }
 
-/* line 71, ../sass/main.sass */
+/* line 70, ../sass/main.sass */
 .wp-caption-text {
   color: #666666;
   font-style: italic;
   text-align: center;
 }
 
-/* line 76, ../sass/main.sass */
+/* line 75, ../sass/main.sass */
 .button {
   display: block;
   text-align: center;
@@ -209,23 +208,23 @@ strong {
   outline: none;
 }
 
-/* line 87, ../sass/main.sass */
+/* line 86, ../sass/main.sass */
 #wrapper {
   width: 95%;
   margin: 0 auto;
 }
 
-/* line 91, ../sass/main.sass */
+/* line 90, ../sass/main.sass */
 #header {
   position: relative;
   text-decoration: none;
   font-family: "Yellowtail", cursive;
 }
-/* line 95, ../sass/main.sass */
+/* line 94, ../sass/main.sass */
 #header a {
   color: white;
 }
-/* line 97, ../sass/main.sass */
+/* line 96, ../sass/main.sass */
 #header #logo {
   display: block;
   text-align: center;
@@ -242,12 +241,12 @@ strong {
   background: linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
 }
 
-/* line 104, ../sass/main.sass */
+/* line 103, ../sass/main.sass */
 #content-wrapper, #footer {
   padding: 0 1.6em;
 }
 
-/* line 107, ../sass/main.sass */
+/* line 106, ../sass/main.sass */
 #content-wrapper {
   background-color: white;
   margin-top: 1.6em;
@@ -261,7 +260,7 @@ strong {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 114, ../sass/main.sass */
+/* line 113, ../sass/main.sass */
 #content-wrapper #sidebar .section {
   border: 1px solid #dedede;
   border-top: 2px solid #c71a00;
@@ -270,17 +269,17 @@ strong {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 123, ../sass/main.sass */
+/* line 122, ../sass/main.sass */
 #content-wrapper #sidebar .section ul li {
   line-height: 1.4em;
   padding: 0.7em 0em;
   border-bottom: 1px solid #dedede;
 }
-/* line 128, ../sass/main.sass */
+/* line 127, ../sass/main.sass */
 #content-wrapper #sidebar .section ul li:last-child {
   border-bottom: none;
 }
-/* line 131, ../sass/main.sass */
+/* line 130, ../sass/main.sass */
 #content-wrapper #sidebar .section h2 {
   text-transform: uppercase;
   font-weight: bold;
@@ -289,30 +288,30 @@ strong {
   font-size: 1.2em;
   line-height: 1.333em;
 }
-/* line 139, ../sass/main.sass */
+/* line 138, ../sass/main.sass */
 #content-wrapper #sidebar .follow li a {
   display: block;
   padding-left: 40px;
   text-align: left;
 }
-/* line 143, ../sass/main.sass */
+/* line 142, ../sass/main.sass */
 #content-wrapper #sidebar .follow li .facebook {
   background: url("../images/facebook.png") 0% 50% no-repeat;
 }
-/* line 145, ../sass/main.sass */
+/* line 144, ../sass/main.sass */
 #content-wrapper #sidebar .follow li .twitter {
   background: url("../images/twitter.png") 0% 50% no-repeat;
 }
-/* line 147, ../sass/main.sass */
+/* line 146, ../sass/main.sass */
 #content-wrapper #sidebar .follow li .rss {
   background: url("../images/rss.png") 0% 50% no-repeat;
 }
-/* line 149, ../sass/main.sass */
+/* line 148, ../sass/main.sass */
 #content-wrapper #sidebar .follow li .email {
   background: url("../images/email.png") 0% 50% no-repeat;
 }
 
-/* line 152, ../sass/main.sass */
+/* line 151, ../sass/main.sass */
 #footer {
   clear: both;
   background-color: #222222;
@@ -337,12 +336,12 @@ strong {
 }
 
 /* wraps around bodies of text meant for reading */
-/* line 161, ../sass/main.sass */
+/* line 160, ../sass/main.sass */
 .content p {
   margin-bottom: 15px;
 }
 
-/* line 165, ../sass/main.sass */
+/* line 164, ../sass/main.sass */
 .post {
   border-bottom: 1px solid #dedede;
   margin-top: 0em;
@@ -350,21 +349,21 @@ strong {
   padding-bottom: 1.6em;
   margin-bottom: 0em;
 }
-/* line 169, ../sass/main.sass */
+/* line 168, ../sass/main.sass */
 .post:first-child {
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 1.6em;
   margin-bottom: 0em;
 }
-/* line 171, ../sass/main.sass */
+/* line 170, ../sass/main.sass */
 .post:last-child {
   margin-top: 0em;
   padding-top: 1.6em;
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
-/* line 178, ../sass/main.sass */
+/* line 177, ../sass/main.sass */
 .post .meta {
   font-family: Arial, sans-serif;
   color: #666666;
@@ -372,17 +371,17 @@ strong {
   font-size: 0.867em;
   line-height: 1.846em;
 }
-/* line 183, ../sass/main.sass */
+/* line 182, ../sass/main.sass */
 .post .meta .author {
   line-height: 3.2em;
 }
-/* line 185, ../sass/main.sass */
+/* line 184, ../sass/main.sass */
 .post .meta .social {
   margin-left: -5px;
   height: 1.6em;
   margin-bottom: 15px;
 }
-/* line 189, ../sass/main.sass */
+/* line 188, ../sass/main.sass */
 .post .meta .social a {
   margin: 0 !important;
   display: inline-block;
@@ -391,31 +390,31 @@ strong {
   position: relative;
   vertical-align: top;
 }
-/* line 196, ../sass/main.sass */
+/* line 195, ../sass/main.sass */
 .post .meta .social a.addthis_button_google_plusone {
   width: 60px !important;
 }
-/* line 198, ../sass/main.sass */
+/* line 197, ../sass/main.sass */
 .post .meta .social a iframe, .post .meta .social a div {
   margin: 0 !important;
   position: absolute;
 }
-/* line 202, ../sass/main.sass */
+/* line 201, ../sass/main.sass */
 .post .content {
   clear: both;
 }
-/* line 204, ../sass/main.sass */
+/* line 203, ../sass/main.sass */
 .post .read-more::after {
   content: " »";
 }
 
 /* Pagination */
-/* line 208, ../sass/main.sass */
+/* line 207, ../sass/main.sass */
 #pagination {
   margin-top: 1.6em;
   text-align: center;
 }
-/* line 211, ../sass/main.sass */
+/* line 210, ../sass/main.sass */
 #pagination a {
   display: inline-block;
   width: 8em;
@@ -446,7 +445,7 @@ strong {
 }
 
 /* Post Show */
-/* line 227, ../sass/main.sass */
+/* line 226, ../sass/main.sass */
 #disqus_thread {
   margin: 0 !important;
   margin-top: 0em;
@@ -458,7 +457,7 @@ strong {
 /* Desktop */
 /* TODO: how to figure out for ipad */
 @media screen and (min-width: 800px) {
-  /* line 234, ../sass/main.sass */
+  /* line 233, ../sass/main.sass */
   #header {
     background-color: #222222;
     color: white;
@@ -470,7 +469,7 @@ strong {
     background: linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
     text-shadow: black 1px 2px 0;
   }
-  /* line 237, ../sass/main.sass */
+  /* line 236, ../sass/main.sass */
   #header #logo {
     max-width: 1000px;
     margin: 0 auto;
@@ -481,11 +480,11 @@ strong {
     background: url(../images/stripes.png) 0% 0% no-repeat;
   }
 
-  /* line 245, ../sass/main.sass */
+  /* line 244, ../sass/main.sass */
   #wrapper {
     max-width: 1024px;
   }
-  /* line 248, ../sass/main.sass */
+  /* line 247, ../sass/main.sass */
   #wrapper #content-wrapper #main {
     float: left;
     width: 59%;
@@ -493,14 +492,14 @@ strong {
     padding: 0;
     padding: 0 1.6em;
   }
-  /* line 255, ../sass/main.sass */
+  /* line 254, ../sass/main.sass */
   #wrapper #content-wrapper #sidebar {
     float: left;
     width: 30%;
     padding: 0;
     padding-left: 1.6em;
   }
-  /* line 262, ../sass/main.sass */
+  /* line 261, ../sass/main.sass */
   #wrapper #content-wrapper #sidebar .follow li a {
     width: 55%;
   }
