@@ -9,6 +9,7 @@
   <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
   <script type="text/javascript">
     var _gaq = _gaq || [];
+    _gaq.push(['_setSiteSpeedSampleRate', 100]);
     _gaq.push(['_setAccount', 'UA-25073623-1']);
     _gaq.push(['_setDomainName', 'rockyroadblog.com']);
     _gaq.push(['_trackPageview']);
