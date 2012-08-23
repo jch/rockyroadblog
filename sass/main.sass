@@ -51,7 +51,6 @@ hr
 
 img, embed, object, video
   width: 100%
-  max-width: 575px
 
 img#wpstats
   display: none !important
@@ -228,8 +227,10 @@ strong
   +rhythm(0, 0, 1, 0)
 
 /* Desktop */
-/* TODO: how to figure out for ipad */
 @media screen and (min-width: 800px)
+  img, embed, object, video
+    max-width: 575px
+
   #header
     +leather
     +single-text-shadow(#000, 1px, 2px, 0)
