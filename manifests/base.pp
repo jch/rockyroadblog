@@ -15,3 +15,16 @@ file { '/etc/motd':
 # }
 
 include wordpress
+
+file { '/opt/wordpress/wp-content/themes/rockyroad':
+   ensure => 'link',
+   target => '/vagrant',
+}
+
+# Wordpress uploads
+file { "/opt/wordpress/wp-content/uploads":
+    ensure => "directory",
+    owner  => "root",
+    group  => "root",
+    mode   => 777,
+}
