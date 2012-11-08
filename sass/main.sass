@@ -178,24 +178,11 @@ strong
     color: $secondary-text-color
     font-style: italic
     +adjust-font-size-to(13px)
+    .meta-section
+      margin-right: 18px
     .author
+      float: left
       +adjust-leading-to(2)
-    .social
-      margin-left: -5px // sigh
-      height: rhythm(1)
-      margin-bottom: $base-font-size // breaks rhythm
-      a
-        margin: 0 !important
-        display: inline-block
-        width: 80px !important
-        padding-left: 5px
-        position: relative // for contained iframe or div
-        vertical-align: top
-        &.addthis_button_google_plusone
-          width: 60px !important
-        iframe, div
-          margin: 0 !important
-          position: absolute
 
   .content
     clear: both  // +clearfix not working
@@ -225,6 +212,9 @@ strong
 #disqus_thread  // vertical rhythm doable, but too much work
   margin: 0 !important
   +rhythm(0, 0, 1, 0)
+
+/* Sharing Strip */
+@import "sharing_strip"
 
 /* Desktop */
 @media screen and (min-width: 800px)

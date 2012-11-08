@@ -1,15 +1,20 @@
 <div class='meta'>
-  <div class='author'>
+  <div class='meta-section author'>
     <p class='byline'>Posted by <?php the_author(); ?> on <?php the_date() ?></p>
   </div>
-  <!--<div class='social'>
-    <div class="addthis_toolbox addthis_default_style ">
-      <a class="addthis_button_tweet"></a>
-      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-    </div>
+  <div class="meta-section sharing-strip">
+    <span class="share-btn facebook">
+      <a href="#">
+        <span class="icon"><img src="/wp-content/themes/rockyroad/images/sharing/sharing-strip-facebook.png" alt=""></span>
+        <span class="label">Like</span>
+      </a>
+    </span>
+
+    <span class="share-btn twitter">
+      <a href="#">
+        <span class="icon"><img src="/wp-content/themes/rockyroad/images/sharing/sharing-strip-twitter.png" alt=""></span>
+        <span class="label">Tweet</span>
+      </a>
+    </span>    
   </div>
-  <div class='comments'>
-    
-  </div>-->
 </div>

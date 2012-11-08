@@ -1,0 +1,125 @@
+/* Sharing Strip */
+.sharing-strip
+  float: left
+  font-family: 'Open Sans', sans-serif
+  color: #333
+  font-size: 13px
+  font-style: normal
+  padding-top: 5px
+
+.share-btn
+  display: inline-block
+  margin-right: 10px
+  padding-bottom: 10px
+  white-space: nowrap
+
+.share-btn:last-child
+  margin-right: 0
+
+.share-btn a
+  background-color: #f5f6f5
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(245, 246, 245)), to(rgb(235, 238, 236)))
+  background-image: -webkit-linear-gradient(top, rgb(245, 246, 245), rgb(235, 238, 236))
+  background-image: -moz-linear-gradient(top, rgb(245, 246, 245), rgb(235, 238, 236))
+  background-image: -o-linear-gradient(top, rgb(245, 246, 245), rgb(235, 238, 236))
+  background-image: -ms-linear-gradient(top, rgb(245, 246, 245), rgb(235, 238, 236))
+  background-image: linear-gradient(top, rgb(245, 246, 245), rgb(235, 238, 236))
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f5f6f5', EndColorStr='#ebeeec')
+  
+  border: 1px solid #ccc
+  -moz-box-shadow: inset 0 1px 0 #fff, 0 2px 2px rgba(0,0,0,.05)
+  -webkit-box-shadow: inset 0 1px 0 #fff, 0 2px 2px rgba(0,0,0,.05)
+  box-shadow: inset 0 1px 0 #fff, 0 2px 2px rgba(0,0,0,.05)
+  
+  -moz-border-radius: 3px
+  -webkit-border-radius: 3px
+  border-radius: 3px
+  
+  color: #777
+  display: inline-block
+  font-size: 11px
+  font-weight: 600 /* optional */
+  height: 20px
+  padding: 0
+  text-decoration: none
+  text-transform: uppercase
+  text-shadow: 0 1px 0 #fff
+  vertical-align: middle
+
+
+.share-btn a .icon
+  border-right: solid 1px #ccc
+  display: block
+  float: left
+  padding: 0 5px
+  text-align: center
+  height: 20px
+
+.share-btn a .label
+  display: block
+  float: left
+  text-align: center
+  line-height: 20px
+  width: 60px
+
+.share-btn a:hover
+  color: #333
+
+
+.share-btn a:active
+  box-shadow: none
+  position: relative
+  top: 1px
+
+.share-btn .total
+  background-color: #f7faf8
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(247, 250, 248)), to(rgb(239, 245, 242)))
+  background-image: -webkit-linear-gradient(top, rgb(247, 250, 248), rgb(239, 245, 242))
+  background-image: -moz-linear-gradient(top, rgb(247, 250, 248), rgb(239, 245, 242))
+  background-image: -o-linear-gradient(top, rgb(247, 250, 248), rgb(239, 245, 242))
+  background-image: -ms-linear-gradient(top, rgb(247, 250, 248), rgb(239, 245, 242))
+  background-image: linear-gradient(top, rgb(247, 250, 248), rgb(239, 245, 242))
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f7faf8', EndColorStr='#eff5f2')
+  
+  border: 1px solid #ccc
+  -moz-box-shadow: inset 0 1px 0 #fff, 0 2px 2px rgba(0,0,0,.05)
+  -webkit-box-shadow: inset 0 1px 0 #fff, 0 2px 2px rgba(0,0,0,.05)
+  box-shadow: inset 0 1px 0 #fff, 0 2px 2px rgba(0,0,0,.05)
+  
+  -moz-border-radius: 3px
+  -webkit-border-radius: 3px
+  border-radius: 3px
+  
+  color: #777
+  display: inline-block
+  font-size: 11px
+  font-weight: 600 /* optional */
+  line-height: 20px
+  margin-left: 3px
+  padding: 0 7px
+  position: relative
+  text-decoration: none
+  text-transform: uppercase
+  text-shadow: 0 1px 0 #fff
+  vertical-align: middle
+
+.share-btn .total:after, .share-btn .total:before
+  right: 100%
+  border: solid transparent
+  content: " "
+  height: 0
+  width: 0
+  position: absolute
+  pointer-events: none
+
+.share-btn .total:after
+  border-right-color: #f7faf8
+  border-width: 4px
+  top: 50%
+  margin-top: -4px
+
+.share-btn .total:before
+  border-right-color: #ccc
+  border-width: 5px
+  top: 50%
+  margin-top: -5px
