@@ -1,0 +1,3 @@
+[submodule "modules/wordpress"]
+	path = modules/wordpress
+	url = https://github.com/jonhadfield/puppet-wordpress.git

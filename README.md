@@ -4,7 +4,10 @@ This theme is a work is progress for [RockyRoadBlog](http://rockyroadblog.com)
 
 ## Development
 
+Follow the instructions for installing [Vagrant](http://vagrantup.com/)
+
 ````
+vagrant up
 bundle
 bundle exec guard
 rake deploy
