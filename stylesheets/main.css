@@ -3,7 +3,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, /opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,58 +25,58 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, /opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../../opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, /opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, /opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, /opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, /opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, /opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, /opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, /opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
 /* adjust-font-size-to doesn't like relative units */
 /* Mobile */
-/* line 53, ../../../../../opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 53, /opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 body {
   font-size: 93.75%;
   line-height: 1.6em;
 }
 
-/* line 57, ../../../../../opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 57, /opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html > body {
   font-size: 15px;
 }
@@ -90,32 +90,32 @@ body {
 /* line 23, ../sass/main.sass */
 .heading {
   font-size: 1.7em;
-  line-height: 1.882em;
+  line-height: 1.88235em;
 }
 
 /* line 26, ../sass/main.sass */
 h1 {
   font-size: 1.7em;
   line-height: 1.3em;
-  padding-bottom: 0.465em;
+  padding-bottom: 0.4649em;
 }
 
 /* line 31, ../sass/main.sass */
 h2 {
   font-size: 1.5em;
-  line-height: 2.133em;
+  line-height: 2.13333em;
 }
 
 /* line 33, ../sass/main.sass */
 h3 {
   font-size: 1.3em;
-  line-height: 1.231em;
+  line-height: 1.23077em;
 }
 
 /* line 35, ../sass/main.sass */
 h4, h5, h6 {
   font-size: 1.1em;
-  line-height: 1.455em;
+  line-height: 1.45455em;
 }
 
 /* line 38, ../sass/main.sass */
@@ -123,7 +123,7 @@ a {
   color: #1567b6;
   text-decoration: none;
 }
-/* line 4, ../../../../../opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, /opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 a:hover {
   text-decoration: underline;
 }
@@ -202,7 +202,7 @@ strong {
   -o-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
-/* line 6, ../../../../../opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, /opt/github/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .button:active, .button:focus {
   outline: none;
 }
@@ -285,7 +285,7 @@ strong {
   font-family: "Helvetica Nueue", "Helvetica", sans-serif;
   padding: 0.7em 0;
   font-size: 1.2em;
-  line-height: 1.333em;
+  line-height: 1.33333em;
 }
 /* line 137, ../sass/main.sass */
 #content-wrapper #sidebar .follow li a {
@@ -367,53 +367,30 @@ strong {
   font-family: Arial, sans-serif;
   color: #666666;
   font-style: italic;
-  font-size: 0.867em;
-  line-height: 1.846em;
+  font-size: 0.86667em;
+  line-height: 1.84615em;
 }
 /* line 181, ../sass/main.sass */
 .post .meta .author {
+  float: left;
   line-height: 3.2em;
 }
-/* line 183, ../sass/main.sass */
-.post .meta .social {
-  margin-left: -5px;
-  height: 1.6em;
-  margin-bottom: 15px;
-}
-/* line 187, ../sass/main.sass */
-.post .meta .social a {
-  margin: 0 !important;
-  display: inline-block;
-  width: 80px !important;
-  padding-left: 5px;
-  position: relative;
-  vertical-align: top;
-}
-/* line 194, ../sass/main.sass */
-.post .meta .social a.addthis_button_google_plusone {
-  width: 60px !important;
-}
-/* line 196, ../sass/main.sass */
-.post .meta .social a iframe, .post .meta .social a div {
-  margin: 0 !important;
-  position: absolute;
-}
-/* line 200, ../sass/main.sass */
+/* line 185, ../sass/main.sass */
 .post .content {
   clear: both;
 }
-/* line 202, ../sass/main.sass */
+/* line 187, ../sass/main.sass */
 .post .read-more::after {
   content: " »";
 }
 
 /* Pagination */
-/* line 206, ../sass/main.sass */
+/* line 191, ../sass/main.sass */
 #pagination {
   margin-top: 1.6em;
   text-align: center;
 }
-/* line 209, ../sass/main.sass */
+/* line 194, ../sass/main.sass */
 #pagination a {
   display: inline-block;
   width: 8em;
@@ -444,7 +421,7 @@ strong {
 }
 
 /* Post Show */
-/* line 225, ../sass/main.sass */
+/* line 210, ../sass/main.sass */
 #disqus_thread {
   margin: 0 !important;
   margin-top: 0em;
@@ -453,14 +430,157 @@ strong {
   margin-bottom: 0em;
 }
 
+/* Sharing Strip */
+/* Sharing Strip */
+/* line 2, /Users/jch/projects/rockyroadblog.com/sass/sharing_strip.sass */
+.sharing-strip {
+  float: right;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-size: 13px;
+  font-style: normal;
+  padding-top: 5px;
+}
+
+/* line 10, /Users/jch/projects/rockyroadblog.com/sass/sharing_strip.sass */
+.share-btn {
+  display: inline-block;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  white-space: nowrap;
+}
+
+/* line 16, /Users/jch/projects/rockyroadblog.com/sass/sharing_strip.sass */
+.share-btn:last-child {
+  margin-right: 0;
+}
+
+/* line 19, /Users/jch/projects/rockyroadblog.com/sass/sharing_strip.sass */
+.share-btn a {
+  background-color: #f5f6f5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f6f5), to(#ebeeec));
+  background-image: -webkit-linear-gradient(top, #f5f6f5, #ebeeec);
+  background-image: -moz-linear-gradient(top, #f5f6f5, #ebeeec);
+  background-image: -o-linear-gradient(top, #f5f6f5, #ebeeec);
+  background-image: -ms-linear-gradient(top, #f5f6f5, #ebeeec);
+  background-image: linear-gradient(top, #f5f6f5, #ebeeec);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f5f6f5', EndColorStr='#ebeeec');
+  border: 1px solid #cccccc;
+  -moz-box-shadow: inset 0 1px 0 white, 0 2px 2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 1px 0 white, 0 2px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 white, 0 2px 2px rgba(0, 0, 0, 0.05);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #777777;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  height: 20px;
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 white;
+  vertical-align: middle;
+}
+
+/* line 50, /Users/jch/projects/rockyroadblog.com/sass/sharing_strip.sass */
+.share-btn a .icon {
+  border-right: solid 1px #cccccc;
+  display: block;
+  float: left;
+  padding: 0 5px;
+  text-align: center;
+  height: 20px;
+}
+
+/* line 58, /Users/jch/projects/rockyroadblog.com/sass/sharing_strip.sass */
+.share-btn a .label {
+  display: block;
+  float: left;
+  text-align: center;
+  line-height: 20px;
+  width: 60px;
+}
+
+/* line 65, /Users/jch/projects/rockyroadblog.com/sass/sharing_strip.sass */
+.share-btn a:hover {
+  color: #333333;
+}
+
+/* line 69, /Users/jch/projects/rockyroadblog.com/sass/sharing_strip.sass */
+.share-btn a:active {
+  box-shadow: none;
+  position: relative;
+  top: 1px;
+}
+
+/* line 74, /Users/jch/projects/rockyroadblog.com/sass/sharing_strip.sass */
+.share-btn .total {
+  background-color: #f7faf8;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7faf8), to(#eff5f2));
+  background-image: -webkit-linear-gradient(top, #f7faf8, #eff5f2);
+  background-image: -moz-linear-gradient(top, #f7faf8, #eff5f2);
+  background-image: -o-linear-gradient(top, #f7faf8, #eff5f2);
+  background-image: -ms-linear-gradient(top, #f7faf8, #eff5f2);
+  background-image: linear-gradient(top, #f7faf8, #eff5f2);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f7faf8', EndColorStr='#eff5f2');
+  border: 1px solid #cccccc;
+  -moz-box-shadow: inset 0 1px 0 white, 0 2px 2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 1px 0 white, 0 2px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 white, 0 2px 2px rgba(0, 0, 0, 0.05);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #777777;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-left: 3px;
+  padding: 0 7px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 white;
+  vertical-align: middle;
+}
+
+/* line 106, /Users/jch/projects/rockyroadblog.com/sass/sharing_strip.sass */
+.share-btn .total:after, .share-btn .total:before {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 115, /Users/jch/projects/rockyroadblog.com/sass/sharing_strip.sass */
+.share-btn .total:after {
+  border-right-color: #f7faf8;
+  border-width: 4px;
+  top: 50%;
+  margin-top: -4px;
+}
+
+/* line 121, /Users/jch/projects/rockyroadblog.com/sass/sharing_strip.sass */
+.share-btn .total:before {
+  border-right-color: #cccccc;
+  border-width: 5px;
+  top: 50%;
+  margin-top: -5px;
+}
+
 /* Desktop */
 @media screen and (min-width: 800px) {
-  /* line 231, ../sass/main.sass */
+  /* line 219, ../sass/main.sass */
   img, embed, object, video {
     max-width: 575px;
   }
 
-  /* line 234, ../sass/main.sass */
+  /* line 222, ../sass/main.sass */
   #header {
     background-color: #222222;
     color: white;
@@ -472,22 +592,22 @@ strong {
     background: linear-gradient(rgba(170, 170, 170, 0.1), rgba(34, 34, 34, 0.1)), url(../images/dark_leather.png);
     text-shadow: black 1px 2px 0;
   }
-  /* line 237, ../sass/main.sass */
+  /* line 225, ../sass/main.sass */
   #header #logo {
     max-width: 1000px;
     margin: 0 auto;
     text-align: left;
     padding-left: 1em;
-    font-size: 3.667em;
-    line-height: 1.309em;
+    font-size: 3.66667em;
+    line-height: 1.30909em;
     background: url(../images/stripes.png) 0% 0% no-repeat;
   }
 
-  /* line 245, ../sass/main.sass */
+  /* line 233, ../sass/main.sass */
   #wrapper {
     max-width: 1024px;
   }
-  /* line 248, ../sass/main.sass */
+  /* line 236, ../sass/main.sass */
   #wrapper #content-wrapper #main {
     float: left;
     width: 59%;
@@ -495,14 +615,14 @@ strong {
     padding: 0;
     padding: 0 1.6em;
   }
-  /* line 255, ../sass/main.sass */
+  /* line 243, ../sass/main.sass */
   #wrapper #content-wrapper #sidebar {
     float: left;
     width: 30%;
     padding: 0;
     padding-left: 1.6em;
   }
-  /* line 262, ../sass/main.sass */
+  /* line 250, ../sass/main.sass */
   #wrapper #content-wrapper #sidebar .follow li a {
     width: 55%;
   }
