@@ -21,5 +21,12 @@
     })();
   </script>
   <script src="https://raw.github.com/scottjehl/Respond/master/respond.min.js" type='text/javascript'></script>
+  <?php
+    /* Always have wp_footer() just before the closing </body>
+    * tag of your theme, or you will break many plugins, which
+    * generally use this hook to reference JavaScript files.
+    */
+    wp_footer();
+  ?>
   </body>
 </html>
