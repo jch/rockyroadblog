@@ -17,12 +17,13 @@
   <div class='section other'>
     <h2 class='heading'>Recent Stories</h2>
     <ul>
-       <?php foreach (c2c_get_recent_posts(10, "") as $post):  ?>
-         <li>
-          <a href='<?php echo get_permalink($post->ID); ?>'>
-            <span><?php echo $post->post_title; ?></span>
-          </a>
-       <?php endforeach; ?>
+      <?php foreach(get_posts(array('numberposts' => 15)) as $post): ?>
+      <li>
+        <a href='<?php echo get_permalink($post->ID); ?>'>
+          <span><?php echo $post->post_title; ?></span>
+        </a>
+      </li>
+      <?php endforeach; ?>
     </ul>
   </div>
 </div>
