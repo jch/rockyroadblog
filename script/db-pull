@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "Fetching rockyroadblog.com database..."
+ssh jch@whatcodecraves.com 'mysqldump -uroot wordpress | gzip' | gunzip -q | mysql -uroot wordpress
+
+echo "Updating wordpress home to http://rockyroadblog.vagrant"
+mysql -uroot wordpress <<SQL
+update wp_options set option_value = 'http://rockyroadblog.vagrant' where option_name = 'siteurl';
+update wp_options set option_value = 'http://rockyroadblog.vagrant' where option_name = 'home';
+SQL
