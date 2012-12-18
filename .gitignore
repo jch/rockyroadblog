@@ -1,5 +1,8 @@
+.bundle
 .DS_Store
 .sass-cache
 .vagrant
+bin/
 tmp/*
 log/*
+vendor/gems
