@@ -12,7 +12,13 @@ $ open 'http://rockyroadblog.vagrant'
 ```
 
 [vagrant-dns](https://github.com/BerlinVagrant/vagrant-dns) is run locally on
-[port 5300 to route requests to the VM.
+port 5300 to route requests to the VM. From within the VM, you can sync the
+local database to the production database by running:
+
+```sh
+$ vagrant ssh
+$ /vagrant/script/db-pull
+```
 
 ## Deployment
 
