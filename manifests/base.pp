@@ -28,3 +28,6 @@ file { "/opt/wordpress/wp-content/uploads":
     group  => "root",
     mode   => 777,
 }
+
+package { "curl": }
+package { "vim": }
