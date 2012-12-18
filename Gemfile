@@ -1,8 +1,11 @@
 source 'http://rubygems.org'
 
+gem 'rake'
 gem 'compass'
 gem 'guard'
 gem 'guard-compass'
 gem 'guard-bundler'
 gem 'growl'
 gem 'rb-fsevent'
+gem 'vagrant'
+gem 'vagrant-dns'
