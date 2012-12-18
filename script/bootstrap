@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo "Installing gem dependencies..."
+bundle install --binstubs --path vendor/gems
+
+echo "Installing rockyroadblog.vagrant dns..."
+sudo vagrant dns --install
+
+echo "Booting vagrant vm..."
+vagrant up
+
+bin/guard

@@ -6,14 +6,25 @@ This theme is a work is progress for [RockyRoadBlog](http://rockyroadblog.com)
 
 Follow the instructions for installing [Vagrant](http://vagrantup.com/)
 
-````
-vagrant up
-bundle
-bundle exec guard
-rake deploy
-````
+```sh
+$ script/bootstrap
+$ open 'http://rockyroadblog.vagrant'
+```
 
-## Directories and Files
+[vagrant-dns](https://github.com/BerlinVagrant/vagrant-dns) is run locally on
+[port 5300 to route requests to the VM.
+
+## Deployment
+
+To deploy the site, run:
+
+```sh
+$ rake deploy
+```
+
+This rsync this theme files over to the server.
+
+## Files
 
 * index.php - main wordpress page
 * style.css - theme definition file
