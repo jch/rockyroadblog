@@ -1,6 +1,6 @@
 <div class='meta'>
   <div class='meta-section author'>
-    <p class='byline'>Posted by <?php the_author(); ?> on <?php the_date() ?></p>
+    <p class='byline'>Posted by <?php the_author_posts_link(); ?> on <?php the_date() ?></p>
   </div>
   <div class="meta-section sharing-strip">
     <!-- <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
