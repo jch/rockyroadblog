@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title><?php wp_title( '' ); ?></title>
+    <title><?php the_title_attribute(); ?></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=320px" />
     <link href="<?php bloginfo('stylesheet_directory'); ?>/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css" />
