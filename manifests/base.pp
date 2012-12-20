@@ -29,5 +29,9 @@ file { "/opt/wordpress/wp-content/uploads":
     mode   => 777,
 }
 
+# Turn on Apache rewrites for permalinks
+exec { '/usr/sbin/a2enmod rewrite': }
+exec { '/usr/sbin/service apache2 restart': }
+
 package { "curl": }
 package { "vim": }
