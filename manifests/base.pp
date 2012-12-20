@@ -33,5 +33,12 @@ file { "/opt/wordpress/wp-content/uploads":
 exec { '/usr/sbin/a2enmod rewrite': }
 exec { '/usr/sbin/service apache2 restart': }
 
+# Wordpress plugins
+file { '/opt/wordpress/wp-content/plugins/ylsy_permalink_redirect.php':
+   ensure => 'link',
+   target => '/vagrant/wp-content/plugins/ylsy_permalink_redirect.php',
+}
+
+
 package { "curl": }
 package { "vim": }
