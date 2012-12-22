@@ -6,7 +6,7 @@ Vagrant::Config.run do |config|
 
   config.dns.tld = "vagrant"
 
-  config.vm.host_name = "rockyroadblog"
+  config.vm.host_name = "rockyroadblog.vagrant"
 
   config.dns.patterns = [/^.*rockyroadblog.vagrant$/]
 
