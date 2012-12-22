@@ -32,15 +32,27 @@ This rsync this theme files over to the server.
 
 ## Files
 
-* index.php - main wordpress page
-* style.css - theme definition file
-* functions.php - shared theme functionality, registration of hooks
-* meta.php - author byline
-* sidebar.php
-* comments.php - disqus comments
-* header.php, footer.php - shared header/footer
-
-* sass - source stylesheets, compiled to css into 'stylesheets'
+    |-- theme
+     `-- index.php     - main wordpress page
+     `-- style.css     - theme definition file
+     `-- functions.php - shared theme functionality, registration of hooks
+     `-- meta.php      - author byline
+     `-- sidebar.php   - sidebar with pages and recent articles
+     `-- comments.php  - disqus comments
+     `-- header.php    - shared header
+     `-- footer.php    - shared footer
+     `-- sass          - source stylesheets
+     `-- stylesheets   - compiled css from sass
+    |-- plugins
+     `-- ylsy_permalink_redirect.php - 301 redirects old permalink structure
+    |-- script
+     `-- bootstrap - development setup
+     `-- db-pull   - pull production data for development. Run within vm.
+    |-- bin     - gem binstubs
+    |-- vendor  - vendored gems
+    |-- modules - puppet modules
+     `-- wordpress - LAMP + wordpress
+    |-- manifests - puppet manifests
 
 ## Notes
 
@@ -50,4 +62,3 @@ This rsync this theme files over to the server.
 * [Splitting Content - The more tag](http://en.support.wordpress.com/splitting-content/more-tag/)
 * http://wordpress.org/support/topic/the-post-object
 * http://justintadlock.com/archives/2009/11/16/everything-you-need-to-know-about-wordpress-2-9s-post-image-feature
-* DONT have blank lines at end of functions.php - it'll insert a blank line in feeds, and break your feeds
