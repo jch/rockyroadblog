@@ -1,4 +1,7 @@
 <?php
+/**
+ * DO NOT have blank lines at end of functions.php - it'll insert a blank line in feeds, and break your feeds
+ */
 if ( function_exists( 'add_theme_support' ) ) { 
   add_theme_support( 'post-thumbnails', array( 'post' ) );
 }
