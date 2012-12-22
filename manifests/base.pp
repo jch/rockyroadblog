@@ -18,7 +18,7 @@ include wordpress
 
 file { '/opt/wordpress/wp-content/themes/rockyroad':
    ensure => 'link',
-   target => '/vagrant',
+   target => '/vagrant/theme',
 }
 
 # Wordpress uploads
@@ -36,7 +36,7 @@ exec { '/usr/sbin/service apache2 restart': }
 # Wordpress plugins
 file { '/opt/wordpress/wp-content/plugins/ylsy_permalink_redirect.php':
    ensure => 'link',
-   target => '/vagrant/wp-content/plugins/ylsy_permalink_redirect.php',
+   target => '/vagrant/plugins/ylsy_permalink_redirect.php',
 }
 
 
