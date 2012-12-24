@@ -1,3 +1,4 @@
+#### Vagrant configuration
 group { "puppet":
   ensure => "present",
 }
@@ -8,11 +9,10 @@ file { '/etc/motd':
               Managed by Puppet.\n"
 }
 
-# include nginx
-# nginx::resource::vhost { 'rockyroadblog.com':
-#   ensure   => present,
-#   www_root => '/var/www/rockyroadblog.com',
-# }
+package { ['curl','vim']:
+  ensure => latest
+}
+
 #### Wordpress configuration
 
 # Installs Wordpress version and symlinks to it
@@ -46,31 +46,91 @@ wordpress::code { $site_path:
   version => '3.5'
 }
 
-include wordpress
+file { "$site_path/wp-config.php":
+  content => template("wordpress/wp-config.php")
+}
 
-file { '/opt/wordpress/wp-content/themes/rockyroad':
+# Theme
+file { "$site_path/wp-content/themes/rockyroad":
    ensure => 'link',
    target => '/vagrant/theme',
 }
 
-# Wordpress uploads
-file { "/opt/wordpress/wp-content/uploads":
+# Uploads
+file { "$site_path/wp-content/uploads":
     ensure => "directory",
     owner  => "root",
     group  => "root",
     mode   => 777,
 }
 
-# Turn on Apache rewrites for permalinks
-exec { '/usr/sbin/a2enmod rewrite': }
-exec { '/usr/sbin/service apache2 restart': }
-
-# Wordpress plugins
-file { '/opt/wordpress/wp-content/plugins/ylsy_permalink_redirect.php':
+# Plugins
+file { "$site_path/wp-content/plugins/ylsy_permalink_redirect.php":
    ensure => 'link',
    target => '/vagrant/plugins/ylsy_permalink_redirect.php',
 }
 
+# Apache configuration
+package { "apache2": ensure => present }
 
-package { "curl": }
-package { "vim": }
+file { "vhost":
+  path    => "/etc/apache2/sites-available/$fqdn",
+  content => template("apache2/vhost.erb"),
+  notify      => Service["apache2"];
+}
+
+exec {
+  "a2ensite $fqdn":
+    command     => "/usr/sbin/a2ensite $fqdn",
+    creates     => "/etc/apache2/sites-enabled/$fqdn",
+    notify      => Service["apache2"];
+  "a2enmod rewrite":
+    command     => "/usr/sbin/a2enmod rewrite",
+    creates     => "/etc/apache2/mods-enabled/rewrite.load",
+    notify      => Service["apache2"];
+}
+
+service {
+  "apache2":
+    ensure     => running,
+    enable     => true,
+    hasrestart => true,
+    hasstatus  => true,
+    require    => Package["apache2", "php5-mysql", "libapache2-mod-php5"],
+}
+
+# PHP configuration
+package { ["php5-mysql", "libapache2-mod-php5"]:
+  ensure => present
+}
+
+# MySQL configuration
+package { ["mysql-client", "mysql-server"]:
+  ensure => present
+}
+
+service {
+  "mysql":
+    ensure => running,
+    enable      => true,
+    hasrestart  => true,
+    hasstatus   => true,
+    require     => Package[ "mysql-client", "mysql-server" ],
+}
+
+exec {
+  'create_schema':
+    path     => '/usr/bin:/usr/sbin:/bin',
+    command  => 'mysql -uroot -e "create database wordpress;"',
+    unless   => 'mysql -uroot -e "use wordpress"',
+    notify   => Exec['grant_privileges'],
+    require  => Service["mysql"];
+  'grant_privileges':
+    path         => '/usr/bin:/usr/sbin:/bin',
+    command      => "mysql -uroot -e \"grant all privileges on\
+                    wordpress.* to\
+                    'wordpress'@'localhost'\
+                    identified by 'wordpress'\"",
+    unless       => "mysql -uwordpress -pwordpress -Dwordpress -hlocalhost",
+    refreshonly  => true;
+}
