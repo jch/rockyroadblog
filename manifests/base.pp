@@ -98,6 +98,10 @@ file { "vhost":
   require => Package["apache2"],
   notify  => Service["apache2"];
 }
+
+file { "/etc/apache2/sites-enabled/000-default":
+  ensure => absent,
+  notify => Service["apache2"];
 }
 
 exec {
