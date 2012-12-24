@@ -9,6 +9,17 @@ file { '/etc/motd':
               Managed by Puppet.\n"
 }
 
+#### Update apt cache before installing any packages
+class apt {
+  exec { "apt-update":
+    command => "/usr/bin/apt-get update"
+  }
+
+  # Ensure apt-get update has been run before installing any packages
+  Exec["apt-update"] -> Package <| |>
+}
+include apt
+
 package { ['curl','vim']:
   ensure => latest
 }
