@@ -58,7 +58,8 @@ define wordpress::code(
 $site_path = "/var/www/$fqdn"
 
 wordpress::code { $site_path:
-  version => '3.5'
+  version => '3.5',
+  notify  => Service["apache2"]
 }
 
 file { "$site_path/wp-config.php":
@@ -91,17 +92,21 @@ package { "apache2": ensure => present }
 file { "vhost":
   path    => "/etc/apache2/sites-available/$fqdn",
   content => template("apache2/vhost.erb"),
-  notify      => Service["apache2"];
+  require => Package["apache2"],
+  notify  => Service["apache2"];
+}
 }
 
 exec {
   "a2ensite $fqdn":
     command     => "/usr/sbin/a2ensite $fqdn",
     creates     => "/etc/apache2/sites-enabled/$fqdn",
+    require     => Package["apache2"],
     notify      => Service["apache2"];
   "a2enmod rewrite":
     command     => "/usr/sbin/a2enmod rewrite",
     creates     => "/etc/apache2/mods-enabled/rewrite.load",
+    require     => Package["apache2"],
     notify      => Service["apache2"];
 }
 
@@ -110,6 +115,7 @@ service {
     ensure     => running,
     enable     => true,
     hasrestart => true,
+    restart    => '/usr/sbin/service apache2 restart',
     hasstatus  => true,
     require    => Package["apache2", "php5-mysql", "libapache2-mod-php5"],
 }
