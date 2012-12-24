@@ -40,14 +40,18 @@ define wordpress::code(
   }
   $target = "/opt/wordpress-$version"
 
-  vcsrepo { $target:
-    ensure     => present,
-    provider   => svn,
-    source     => "http://core.svn.wordpress.org/tags/$version"
+  package { "subversion": ensure => latest }
+
+  exec { "svn-checkout":
+    command => "/usr/bin/svn export http://core.svn.wordpress.org/tags/$version $target",
+    creates => $target,
+    require => Package["subversion"];
   }
 
   file { $symlink:
-    target => $target
+    ensure  => link,
+    target  => $target,
+    require => Exec["svn-checkout"]
   }
 }
 
