@@ -90,7 +90,7 @@ file { "$site_path/wp-content/plugins/ylsy_permalink_redirect.php":
 }
 
 # Apache configuration
-package { "apache2": ensure => present }
+package { "apache2": ensure => latest }
 
 file { "vhost":
   path    => "/etc/apache2/sites-available/$fqdn",
@@ -129,12 +129,12 @@ service {
 
 # PHP configuration
 package { ["php5-mysql", "libapache2-mod-php5"]:
-  ensure => present
+  ensure => latest
 }
 
 # MySQL configuration
 package { ["mysql-client", "mysql-server"]:
-  ensure => present
+  ensure => latest
 }
 
 service {
