@@ -70,6 +70,7 @@ file { "$site_path/wp-config.php":
 file { "$site_path/wp-content/themes/rockyroad":
    ensure => 'link',
    target => '/vagrant/theme',
+   require => Wordpress::Code[$site_path]
 }
 
 # Uploads
@@ -78,12 +79,14 @@ file { "$site_path/wp-content/uploads":
     owner  => "root",
     group  => "root",
     mode   => 777,
+    require => Wordpress::Code[$site_path]
 }
 
 # Plugins
 file { "$site_path/wp-content/plugins/ylsy_permalink_redirect.php":
    ensure => 'link',
    target => '/vagrant/plugins/ylsy_permalink_redirect.php',
+   require => Wordpress::Code[$site_path]
 }
 
 # Apache configuration
