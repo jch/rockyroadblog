@@ -62,7 +62,7 @@ wordpress::code { $site_path:
 }
 
 file { "$site_path/wp-config.php":
-  content => template("wordpress/wp-config.php")
+  content => template("wordpress/wp-config.php.erb")
 }
 
 # Theme
