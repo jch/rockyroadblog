@@ -1,28 +1,21 @@
 /* Sharing Strip */
-/* line 2, ../sass/sharing_strip.sass */
 .sharing-strip {
   float: right;
   font-family: "Open Sans", sans-serif;
   color: #333333;
   font-size: 13px;
   font-style: normal;
-  padding-top: 5px;
-}
+  padding-top: 5px; }
 
-/* line 10, ../sass/sharing_strip.sass */
 .share-btn {
   display: inline-block;
   margin-right: 10px;
   padding-bottom: 10px;
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 
-/* line 16, ../sass/sharing_strip.sass */
 .share-btn:last-child {
-  margin-right: 0;
-}
+  margin-right: 0; }
 
-/* line 19, ../sass/sharing_strip.sass */
 .share-btn a {
   background-color: #f5f6f5;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f6f5), to(#ebeeec));
@@ -48,41 +41,31 @@
   text-decoration: none;
   text-transform: uppercase;
   text-shadow: 0 1px 0 white;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
-/* line 50, ../sass/sharing_strip.sass */
 .share-btn a .icon {
   border-right: solid 1px #cccccc;
   display: block;
   float: left;
   padding: 0 5px;
   text-align: center;
-  height: 20px;
-}
+  height: 20px; }
 
-/* line 58, ../sass/sharing_strip.sass */
 .share-btn a .label {
   display: block;
   float: left;
   text-align: center;
   line-height: 20px;
-  width: 60px;
-}
+  width: 60px; }
 
-/* line 65, ../sass/sharing_strip.sass */
 .share-btn a:hover {
-  color: #333333;
-}
+  color: #333333; }
 
-/* line 69, ../sass/sharing_strip.sass */
 .share-btn a:active {
   box-shadow: none;
   position: relative;
-  top: 1px;
-}
+  top: 1px; }
 
-/* line 74, ../sass/sharing_strip.sass */
 .share-btn .total {
   background-color: #f7faf8;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f7faf8), to(#eff5f2));
@@ -110,10 +93,8 @@
   text-decoration: none;
   text-transform: uppercase;
   text-shadow: 0 1px 0 white;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
-/* line 106, ../sass/sharing_strip.sass */
 .share-btn .total:after, .share-btn .total:before {
   right: 100%;
   border: solid transparent;
@@ -121,21 +102,16 @@
   height: 0;
   width: 0;
   position: absolute;
-  pointer-events: none;
-}
+  pointer-events: none; }
 
-/* line 115, ../sass/sharing_strip.sass */
 .share-btn .total:after {
   border-right-color: #f7faf8;
   border-width: 4px;
   top: 50%;
-  margin-top: -4px;
-}
+  margin-top: -4px; }
 
-/* line 121, ../sass/sharing_strip.sass */
 .share-btn .total:before {
   border-right-color: #cccccc;
   border-width: 5px;
   top: 50%;
-  margin-top: -5px;
-}
+  margin-top: -5px; }
