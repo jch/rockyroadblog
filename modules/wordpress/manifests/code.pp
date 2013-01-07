@@ -12,17 +12,17 @@ define wordpress::code(
   }
   $target = "/opt/wordpress-$version"
 
-  package { "subversion": ensure => latest }
+  package { 'subversion': ensure => latest }
 
-  exec { "svn-checkout":
+  exec { 'svn-checkout':
     command => "/usr/bin/svn export http://core.svn.wordpress.org/tags/$version $target",
     creates => $target,
-    require => Package["subversion"];
+    require => Package['subversion'];
   }
 
   file { $symlink:
     ensure  => link,
     target  => $target,
-    require => Exec["svn-checkout"]
+    require => Exec['svn-checkout']
   }
 }

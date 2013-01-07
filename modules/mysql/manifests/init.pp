@@ -1,15 +1,15 @@
 class mysql {
-  package { ["mysql-client", "mysql-server"]:
+  package { ['mysql-client', 'mysql-server']:
     ensure => latest
   }
 
   service {
-    "mysql":
+    'mysql':
       ensure => running,
       enable      => true,
       hasrestart  => true,
       hasstatus   => true,
-      require     => Package[ "mysql-client", "mysql-server" ],
+      require     => Package[ 'mysql-client', 'mysql-server' ],
   }
 
   exec {
@@ -18,7 +18,7 @@ class mysql {
       command  => 'mysql -uroot -e "create database wordpress;"',
       unless   => 'mysql -uroot -e "use wordpress"',
       notify   => Exec['grant_privileges'],
-      require  => Service["mysql"];
+      require  => Service['mysql'];
     'grant_privileges':
       path         => '/usr/bin:/usr/sbin:/bin',
       command      => "mysql -uroot -e \"grant all privileges on\

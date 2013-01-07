@@ -1,8 +1,8 @@
 class apt {
-  exec { "apt-update":
-    command => "/usr/bin/apt-get update"
+  exec { 'apt-update':
+    command => '/usr/bin/apt-get update'
   }
 
   # Ensure apt-get update has been run before installing any packages
-  Exec["apt-update"] -> Package <| |>
+  Exec['apt-update'] -> Package <| |>
 }

@@ -15,23 +15,23 @@ wordpress::code { $site_path:
 }
 
 file { "$site_path/wp-config.php":
-  content => template("wordpress/wp-config.php.erb")
+  content => template('wordpress/wp-config.php.erb')
 }
 
 # Theme
 file { "$site_path/wp-content/themes/rockyroad":
-   ensure => 'link',
-   target => '/vagrant/theme',
-   require => Wordpress::Code[$site_path]
+  ensure => 'link',
+  target => '/vagrant/theme',
+  require => Wordpress::Code[$site_path]
 }
 
 # Uploads
 file { "$site_path/wp-content/uploads":
-    ensure => "directory",
-    owner  => "root",
-    group  => "root",
-    mode   => 777,
-    require => Wordpress::Code[$site_path]
+  ensure => 'directory',
+  owner  => 'root',
+  group  => 'root',
+  mode   => 777,
+  require => Wordpress::Code[$site_path]
 }
 
 # .htaccess
@@ -41,7 +41,7 @@ file { "$site_path/.htaccess":
 
 # Plugins
 file { "$site_path/wp-content/plugins/ylsy_permalink_redirect.php":
-   ensure => 'link',
-   target => '/vagrant/plugins/ylsy_permalink_redirect.php',
-   require => Wordpress::Code[$site_path]
+  ensure => 'link',
+  target => '/vagrant/plugins/ylsy_permalink_redirect.php',
+  require => Wordpress::Code[$site_path]
 }
