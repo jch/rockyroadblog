@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+  ServerName <%= @fqdn %>
+  ServerAlias www.<%= @fqdn %>
+  DocumentRoot /var/www/<%= @fqdn %>
+  <Directory />
+    Options FollowSymLinks
+    AllowOverride FileInfo
+  </Directory>
+</VirtualHost>
