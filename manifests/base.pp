@@ -1,44 +1,47 @@
-group { "puppet":
-  ensure => "present",
+include common
+include vagrant
+include apt
+include apache2
+include php
+include mysql
+
+#### Wordpress configuration
+
+$site_path = "/var/www/$fqdn"
+
+wordpress::code { $site_path:
+  version => '3.5',
+  notify  => Service["apache2"]
 }
 
-File { owner => 0, group => 0, mode => 0644 }
-file { '/etc/motd':
-  content => "Welcome to your Vagrant-built virtual machine!
-              Managed by Puppet.\n"
+file { "$site_path/wp-config.php":
+  content => template('wordpress/wp-config.php.erb')
 }
 
-# include nginx
-# nginx::resource::vhost { 'rockyroadblog.com':
-#   ensure   => present,
-#   www_root => '/var/www/rockyroadblog.com',
-# }
-
-include wordpress
-
-file { '/opt/wordpress/wp-content/themes/rockyroad':
-   ensure => 'link',
-   target => '/vagrant/theme',
+# Theme
+file { "$site_path/wp-content/themes/rockyroad":
+  ensure => 'link',
+  target => '/vagrant/theme',
+  require => Wordpress::Code[$site_path]
 }
 
-# Wordpress uploads
-file { "/opt/wordpress/wp-content/uploads":
-    ensure => "directory",
-    owner  => "root",
-    group  => "root",
-    mode   => 777,
+# Uploads
+file { "$site_path/wp-content/uploads":
+  ensure => 'directory',
+  owner  => 'root',
+  group  => 'root',
+  mode   => 777,
+  require => Wordpress::Code[$site_path]
 }
 
-# Turn on Apache rewrites for permalinks
-exec { '/usr/sbin/a2enmod rewrite': }
-exec { '/usr/sbin/service apache2 restart': }
-
-# Wordpress plugins
-file { '/opt/wordpress/wp-content/plugins/ylsy_permalink_redirect.php':
-   ensure => 'link',
-   target => '/vagrant/plugins/ylsy_permalink_redirect.php',
+# .htaccess
+file { "$site_path/.htaccess":
+  content => template('wordpress/htaccess.erb')
 }
 
-
-package { "curl": }
-package { "vim": }
+# Plugins
+file { "$site_path/wp-content/plugins/ylsy_permalink_redirect.php":
+  ensure => 'link',
+  target => '/vagrant/plugins/ylsy_permalink_redirect.php',
+  require => Wordpress::Code[$site_path]
+}
