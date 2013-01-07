@@ -34,6 +34,11 @@ file { "$site_path/wp-content/uploads":
     require => Wordpress::Code[$site_path]
 }
 
+# .htaccess
+file { "$site_path/.htaccess":
+  content => template('wordpress/htaccess.erb')
+}
+
 # Plugins
 file { "$site_path/wp-content/plugins/ylsy_permalink_redirect.php":
    ensure => 'link',
