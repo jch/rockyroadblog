@@ -18,8 +18,3 @@
     <?php the_content('<p>Continue reading <span class="meta-nav">&rarr;</span></p>'); ?>
   </div>
 </article>
-
-<?php if(is_single()) : ?>
-  <?/* This should just work, but it isn't */?>
-  <?php get_template_part('comments'); ?>
-<?php endif; ?>
