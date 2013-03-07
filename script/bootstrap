@@ -9,4 +9,4 @@ sudo vagrant dns --install
 echo "Booting vagrant vm..."
 vagrant up
 
-bin/guard
+bin/compass watch --sass-dir theme/sass --css-dir theme/stylesheets
