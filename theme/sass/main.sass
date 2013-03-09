@@ -65,10 +65,6 @@ blockquote
 strong
   font-weight: bold
 
-li
-  margin-left: 1em
-  list-style: disc
-
 /* Image Captions */
 .wp-caption
   width: 100% !important
@@ -163,9 +159,12 @@ li
 
 /* wraps around bodies of text meant for reading */
 .content
-  p
+  p, ul
     // +trailer(1)
     margin-bottom: $base-font-size // breaks rhythm, but better looking
+  li
+    margin-left: 1em
+    list-style: disc
 
 .post
   border-bottom: 1px solid #dedede
