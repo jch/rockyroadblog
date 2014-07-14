@@ -8,3 +8,6 @@ mysql -uroot wordpress <<SQL
 update wp_options set option_value = 'http://rockyroadblog.vagrant' where option_name = 'siteurl';
 update wp_options set option_value = 'http://rockyroadblog.vagrant' where option_name = 'home';
 SQL
+
+echo "Pulling down images..."
+rsync -avz --human-readable --times jch@whatcodecraves.com:/var/www/wp-uploads/rockyroadblog.com uploads
